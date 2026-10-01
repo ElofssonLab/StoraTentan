@@ -1,0 +1,249 @@
+needleman1970	Needleman	1970	A general method applicable to the search for similarities in the amino acid sequence of t
+smith1981	Smith	1981	Identification of common molecular subsequences
+altschul1990	Altschul	1990	Basic local alignment search tool
+altschul1997	Altschul	1997	Gapped BLAST and PSI-BLAST: a new generation of protein database search programs
+pearson1988	Pearson	1988	Improved tools for biological sequence comparison.
+pearson2013	Pearson	2013	An Introduction to Sequence Similarity (“Homology”) Searching
+henikoff1992	Henikoff	1992	Amino acid substitution matrices from protein blocks.
+krogh1994	Krogh	1994	Hidden Markov Models in Computational Biology
+eddy2004	Eddy	2004	What is a hidden Markov model?
+eddy2008	Eddy	2008	A Probabilistic Model of Local Sequence Alignment That Simplifies Statistical Significance
+eddy2011	Eddy	2011	Accelerated Profile HMM Searches
+park1998	Park	1998	Sequence comparisons using multiple sequences detect three times as many remote homologues
+soding2005	Söding	2004	Protein homology detection by HMM–HMM comparison
+remmert2012	Remmert	2011	HHblits: lightning-fast iterative protein sequence searching by HMM-HMM alignment
+steinegger2017	Steinegger	2017	MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets
+buchfink2021	Buchfink	2021	Sensitive protein alignments at tree-of-life scale using DIAMOND
+kent2002	Kent	2002	<tt>BLAT</tt>
+                    —The
+                    <tt>BLAST</tt>
+                
+vankempen2024	van Kempen	2023	Fast and accurate protein structure search with Foldseek
+edgar2004	Edgar	2004	MUSCLE: multiple sequence alignment with high accuracy and high throughput
+notredame2000	Notredame	2000	T-coffee: a novel method for fast and accurate multiple sequence alignment 1 1Edited by J.
+katoh2013	Katoh	2013	MAFFT Multiple Sequence Alignment Software Version 7: Improvements in Performance and Usab
+sievers2011	Sievers	2011	Fast, scalable generation of high‐quality protein multiple sequence alignments using Clust
+lawrence1993	Lawrence	1993	Detecting Subtle Sequence Signals: a Gibbs Sampling Strategy for Multiple Alignment
+stormo2000	Stormo	2000	DNA binding sites: representation and discovery
+uniprot2023		2022	UniProt: the Universal Protein Knowledgebase in 2023
+sonnhammer1997	Sonnhammer	1997	Pfam: A comprehensive database of protein domain families based on seed alignments
+mistry2021	Mistry	2020	Pfam: The protein families database in 2021
+paysanlafosse2023	Paysan-Lafosse	2022	InterPro in 2022
+murzin1995	Murzin	1995	SCOP: A structural classification of proteins database for the investigation of sequences 
+cheng2014	Cheng	2014	ECOD: An Evolutionary Classification of Protein Domains
+sillitoe2021	Sillitoe	2020	CATH: increased structural coverage of functional space
+berman2000	Berman	2000	The Protein Data Bank
+varadi2022	Varadi	2021	AlphaFold Protein Structure Database: massively expanding the structural coverage of prote
+cunningham2022	Cunningham	2021	Ensembl 2022
+ashburner2000	Ashburner	2000	Gene Ontology: tool for the unification of biology
+go2023		2023	The Gene Ontology knowledgebase in 2023
+szklarczyk2023	Szklarczyk	2022	The STRING database in 2023: protein–protein association networks and functional enrichmen
+kimura1968	KIMURA	1968	Evolutionary Rate at the Molecular Level
+fitch1970	Fitch	1970	Distinguishing Homologous from Analogous Proteins
+fitch2000	Fitch	2000	Homology
+koonin2005	Koonin	2005	Orthologs, Paralogs, and Evolutionary Genomics
+koonin2011	Koonin	2011	Are There Laws of Genome Evolution?
+lynch2000	Lynch	2000	The Evolutionary Fate and Consequences of Duplicate Genes
+lynch2003	Lynch	2003	The Origins of Genome Complexity
+altenhoff2019	Altenhoff	2019	Inferring Orthology and Paralogy
+tatusov1997	Tatusov	1997	A Genomic Perspective on Protein Families
+remm2001	Remm	2001	Automatic clustering of orthologs and in-paralogs from pairwise species comparisons
+emms2019	Emms	2019	OrthoFinder: phylogenetic orthology inference for comparative genomics
+apic2001	Apic	2001	Domain combinations in archaeal, eubacterial and eukaryotic proteomes
+bjorklund2005	Björklund	2005	Domain Rearrangements in Protein Evolution
+levy2008	Levy	2008	Assembly reflects evolution of protein complexes
+yang2000	Yang	2000	Statistical methods for detecting molecular adaptation
+doolittle2010	Doolittle	2010	The Roots of Bioinformatics in Protein Evolution
+treangen2011	Treangen	2011	Horizontal Transfer, Not Duplication, Drives the Expansion of Protein Families in Prokaryo
+felsenstein1981	Felsenstein	1981	Evolutionary trees from DNA sequences: A maximum likelihood approach
+felsenstein1985	Felsenstein	1985	CONFIDENCE LIMITS ON PHYLOGENIES: AN APPROACH USING THE BOOTSTRAP
+fitch1971	Fitch	1971	Toward Defining the Course of Evolution: Minimum Change for a Specific Tree Topology
+saitou1987		1987	The neighbor-joining method: a new method for reconstructing phylogenetic trees.
+huelsenbeck2001	Huelsenbeck	2001	Bayesian Inference of Phylogeny and Its Impact on Evolutionary Biology
+steel2000	Steel	2000	Parsimony, Likelihood, and the Role of Models in Molecular Phylogenetics
+wong2008	Wong	2008	Alignment Uncertainty and Genomic Analysis
+redelings2005	Redelings	2005	Joint Bayesian Estimation of Alignment and Phylogeny
+thorne1991	Thorne	1991	An evolutionary model for maximum likelihood alignment of DNA sequences
+delsuc2005	Delsuc	2005	Phylogenomics and the reconstruction of the tree of life
+yang2012	Yang	2012	Molecular phylogenetics: principles and practice
+kapli2020	Kapli	2020	Phylogenetic tree building in the genomic age
+stamatakis2014	Stamatakis	2014	RAxML version 8: a tool for phylogenetic analysis and post-analysis of large phylogenies
+minh2020	Minh	2020	IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era
+ronquist2012	Ronquist	2012	MrBayes 3.2: Efficient Bayesian Phylogenetic Inference and Model Choice Across a Large Mod
+hug2016	Hug	2016	A new view of the tree of life
+sanger1977	Sanger	1977	DNA sequencing with chain-terminating inhibitors
+smith1986	Smith	1986	Fluorescence detection in automated DNA sequence analysis
+ronaghi1998	Ronaghi	1998	A Sequencing Method Based on Real-Time Pyrophosphate
+margulies2005	Margulies	2005	Genome sequencing in microfabricated high-density picolitre reactors
+bentley2008	Bentley	2008	Accurate whole human genome sequencing using reversible terminator chemistry
+goodwin2016	Goodwin	2016	Coming of age: ten years of next-generation sequencing technologies
+jain2018	Jain	2018	Nanopore sequencing and assembly of a human genome with ultra-long reads
+myers2000	Myers	2000	A Whole-Genome Assembly of
+            <i>Drosophila</i>
+pevzner2001	Pevzner	2001	An Eulerian path approach to DNA fragment assembly
+myers2005	Myers	2005	The fragment assembly string graph
+zerbino2008	Zerbino	2008	Velvet: Algorithms for de novo short read assembly using de Bruijn graphs
+compeau2011	Compeau	2011	How to apply de Bruijn graphs to genome assembly
+bradnam2013	Bradnam	2013	Assemblathon 2: evaluating
+                    <i>de novo</i>
+                    methods 
+cheng2021	Cheng	2021	Haplotype-resolved de novo assembly using phased assembly graphs with hifiasm
+nurk2022	Nurk	2022	The complete sequence of a human genome
+burge1997	Burge	1997	Prediction of complete gene structures in human genomic DNA
+lukashin1998	Lukashin	1998	GeneMark.hmm: new solutions for gene finding
+langmead2009	Langmead	2009	Ultrafast and memory-efficient alignment of short DNA sequences to the human genome
+li2009	Li	2009	Fast and accurate short read alignment with Burrows–Wheeler transform
+li2018	Li	2018	Minimap2: pairwise alignment for nucleotide sequences
+li2008	Li	2008	Mapping short DNA sequencing reads and calling variants using mapping quality scores
+li2011	Li	2011	A statistical framework for SNP calling, mutation discovery, association mapping and popul
+depristo2011	DePristo	2011	A framework for variation discovery and genotyping using next-generation DNA sequencing da
+poplin2018	Poplin	2018	A universal SNP and small-indel variant caller using deep neural networks
+fleischmann1995	Fleischmann	1995	Whole-Genome Random Sequencing and Assembly of
+                    <i>Haemophilus influenz
+lander2001		2001	Initial sequencing and analysis of the human genome
+venter2001	Venter	2001	The Sequence of the Human Genome
+encode2012		2012	An integrated encyclopedia of DNA elements in the human genome
+koonin2008	Koonin	2008	Genomics of bacteria and archaea: the emerging dynamic view of the prokaryotic world
+tettelin2005	Tettelin	2005	Genome analysis of multiple pathogenic isolates of
+                    <i>Streptococcus ag
+liebermanaiden2009	Lieberman-Aiden	2009	Comprehensive Mapping of Long-Range Interactions Reveals Folding Principles of the Human G
+fodor1991	Fodor	1991	Light-Directed, Spatially Addressable Parallel Chemical Synthesis
+schena1995	Schena	1995	Quantitative Monitoring of Gene Expression Patterns with a Complementary DNA Microarray
+eisen1998	Eisen	1998	Cluster analysis and display of genome-wide expression patterns
+quackenbush2001	Quackenbush	2001	Computational analysis of microarray data
+su2004	Su	2004	A gene atlas of the mouse and human protein-encoding transcriptomes
+mortazavi2008	Mortazavi	2008	Mapping and quantifying mammalian transcriptomes by RNA-Seq
+wang2009	Wang	2009	RNA-Seq: a revolutionary tool for transcriptomics
+trapnell2010	Trapnell	2010	Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isof
+oshlack2010	Oshlack	2010	From RNA-seq reads to differential expression results
+robinson2010	Robinson	2009	<tt>edgeR</tt>
+                    : a Bioconductor package for differential expression an
+love2014	Love	2014	Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2
+dobin2013	Dobin	2012	STAR: ultrafast universal RNA-seq aligner
+bray2016	Bray	2016	Near-optimal probabilistic RNA-seq quantification
+patro2017	Patro	2017	Salmon provides fast and bias-aware quantification of transcript expression
+conesa2016	Conesa	2016	A survey of best practices for RNA-seq data analysis
+stark2019	Stark	2019	RNA sequencing: the teenage years
+subramanian2005	Subramanian	2005	Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expr
+luecken2019	Luecken	2019	Current best practices in single‐cell RNA‐seq analysis: a tutorial
+heumos2023	Heumos	2023	Best practices for single-cell analysis across modalities
+benjamini1995	Benjamini	1995	Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testin
+storey2003	Storey	2003	Statistical significance for genomewide studies
+efron2002	Efron	2002	Empirical bayes methods and false discovery rates for microarrays
+lever2017	Lever	2017	Principal component analysis
+aebersold2003	Aebersold	2003	Mass spectrometry-based proteomics
+aebersold2016	Aebersold	2016	Mass-spectrometric exploration of proteome structure and function
+eng1994	Eng	1994	An approach to correlate tandem mass spectral data of peptides with amino acid sequences i
+perkins1999	Perkins	1999	Probability-based protein identification by searching sequence databases using mass spectr
+elias2007	Elias	2007	Target-decoy search strategy for increased confidence in large-scale protein identificatio
+kall2007	Käll	2007	Semi-supervised learning for peptide identification from shotgun proteomics datasets
+cox2008	Cox	2008	MaxQuant enables high peptide identification rates, individualized p.p.b.-range mass accur
+nesvizhskii2010	Nesvizhskii	2010	A survey of computational methods and error rate estimation procedures for peptide and pro
+gillet2012	Gillet	2012	Targeted Data Extraction of the MS/MS Spectra Generated by Data-independent Acquisition: A
+ludwig2018	Ludwig	2018	Data‐independent acquisition‐based SWATH‐MS for quantitative proteomics: a tutorial
+demichev2020	Demichev	2019	DIA-NN: neural networks and interference correction enable deep proteome coverage in high 
+gessulat2019	Gessulat	2019	Prosit: proteome-wide prediction of peptide tandem mass spectra by deep learning
+wilhelm2014	Wilhelm	2014	Mass-spectrometry-based draft of the human proteome
+kim2014	Kim	2014	A draft map of the human proteome
+uhlen2015	Uhlén	2015	Tissue-based map of the human proteome
+perezriverol2022	Perez-Riverol	2021	The PRIDE database resources in 2022: a hub for mass spectrometry-based proteomics evidenc
+ideker2001	Ideker	2001	Integrated Genomic and Proteomic Analyses of a Systematically Perturbed Metabolic Network
+anfinsen1973	Anfinsen	1973	Principles that Govern the Folding of Protein Chains
+levinthal1966	Levinthal	1966	Molecular Model-Building by Computer
+chothia1977	Chothia	1977	Structure of proteins: packing of alpha-helices and pleated sheets.
+chou1974a	Chou	1974	Conformational parameters for amino acids in helical, β-sheet, and random coil regions cal
+chou1974b	Chou	1974	Prediction of protein conformation
+garnier1978	Garnier	1978	Analysis of the accuracy and implications of simple methods for predicting the secondary s
+rost1993	Rost	1993	Prediction of Protein Secondary Structure at Better than 70% Accuracy
+jones1999	Jones	1999	Protein secondary structure prediction based on position-specific scoring matrices 1 1Edit
+bowie1991	Bowie	1991	A Method to Identify Protein Sequences That Fold into a Known Three-Dimensional Structure
+jones1992	Jones	1992	A new approach to protein fold recognition
+fischer1996	Fischer	1996	Protein fold recognition using sequence‐derived predictions
+sali1993	Šali	1993	Comparative Protein Modelling by Satisfaction of Spatial Restraints
+simons1997	Simons	1997	Assembly of protein tertiary structures from fragments with similar local sequences using 
+bradley2005	Bradley	2005	Toward High-Resolution de Novo Structure Prediction for Small Proteins
+weigt2009	Weigt	2009	Identification of direct residue contacts in protein–protein interaction by message passin
+marks2011	Marks	2011	Protein 3D Structure Computed from Evolutionary Sequence Variation
+marks2012	Marks	2012	Protein structure prediction from sequence variation
+wang2017	Wang	2017	Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model
+senior2020	Senior	2020	Improved protein structure prediction using potentials from deep learning
+jumper2021	Jumper	2021	Highly accurate protein structure prediction with AlphaFold
+baek2021	Baek	2021	Accurate prediction of protein structures and interactions using a three-track neural netw
+lin2023	Lin	2023	Evolutionary-scale prediction of atomic-level protein structure with a language model
+abramson2024	Abramson	2024	Accurate structure prediction of biomolecular interactions with AlphaFold 3
+kryshtafovych2021	Kryshtafovych	2021	Critical assessment of methods of protein structure prediction (CASP)—Round <scp>XIV</scp>
+holm1996	Holm	1996	Mapping the Protein Universe
+zhang2005	Zhang	2005	TM-align: a protein structure alignment algorithm based on the TM-score
+reeves2006	Reeves	2006	Structural Diversity of Domain Superfamilies in the CATH Database
+scheres2012	Scheres	2012	A Bayesian View on Cryo-EM Structure Determination
+brunger1992	Brünger	1992	Free R value: a novel statistical quantity for assessing the accuracy of crystal structure
+mccammon1977	McCammon	1977	Dynamics of folded proteins
+vonheijne1992	von Heijne	1992	Membrane protein structure prediction
+krogh2001	Krogh	2001	Predicting transmembrane protein topology with a hidden markov model: application to compl
+hallgren2022	Hallgren	2022	DeepTMHMM predicts alpha and beta transmembrane proteins using deep neural networks
+kuntz1982	Kuntz	1982	A geometric approach to macromolecule-ligand interactions
+meng1992	Meng	1992	Automated docking with grid‐based energy evaluation
+bohm1994	B�hm	1994	The development of a simple empirical scoring function to estimate the binding constant fo
+muegge1999	Muegge	1999	A General and Fast Scoring Function for Protein−Ligand Interactions:  A Simplified Potenti
+warren2006	Warren	2005	A Critical Assessment of Docking Programs and Scoring Functions
+dahiyat1997	Dahiyat	1997	De Novo Protein Design: Fully Automated Sequence Selection
+jiang2008	Jiang	2008	De Novo Computational Design of Retro-Aldol Enzymes
+koga2012	Koga	2012	Principles for designing ideal protein structures
+huang2016	Huang	2016	The coming of age of de novo protein design
+dauparas2022	Dauparas	2022	Robust deep learning–based protein sequence design using ProteinMPNN
+watson2023	Watson	2023	De novo design of protein structure and function with RFdiffusion
+radivojac2013	Radivojac	2013	A large-scale evaluation of computational protein function prediction
+zhou2019	Zhou	2019	The CAFA challenge reports improved protein function prediction and new functional annotat
+whisstock2003	Whisstock	2003	Prediction of protein function from protein sequence and structure
+vonheijne1986	von Heijne	1986	A new method for predicting signal sequence cleavage sites
+nielsen1997	Nielsen	1997	Identification of prokaryotic and eukaryotic signal peptides and prediction of their cleav
+petersen2011	Petersen	2011	SignalP 4.0: discriminating signal peptides from transmembrane regions
+teufel2022	Teufel	2022	SignalP 6.0 predicts all five types of signal peptides using protein language models
+almagro2017	Almagro Armenteros	2017	DeepLoc: prediction of protein subcellular localization using deep learning
+thumuluri2022	Thumuluri	2022	DeepLoc 2.0: multi-label subcellular localization prediction using protein language models
+frazer2021	Frazer	2021	Disease variant prediction with deep generative models of evolutionary data
+cheng2023	Cheng	2023	Accurate proteome-wide missense variant effect prediction with AlphaMissense
+marcotte1999science	Marcotte	1999	Detecting Protein Function and Protein-Protein Interactions from Genome Sequences
+enright2001	Enright	2001	Functional associations of proteins in entire genomes by means of exhaustive detection of 
+snel2000	Snel	2000	Genome evolution
+garzon2016	Garzón	2016	A computational interactome and functional annotation for the human proteome
+uetz2000	Uetz	2000	A comprehensive analysis of protein–protein interactions in Saccharomyces cerevisiae
+gavin2002	Gavin	2002	Functional organization of the yeast proteome by systematic analysis of protein complexes
+ho2002	Ho	2002	Systematic identification of protein complexes in Saccharomyces cerevisiae by mass spectro
+vonmering2002	von Mering	2002	Comparative assessment of large-scale data sets of protein–protein interactions
+rolland2014	Rolland	2014	A Proteome-Scale Map of the Human Interactome Network
+luck2020	Luck	2020	A reference map of the human binary protein interactome
+huttlin2021	Huttlin	2021	Dual proteome-scale networks reveal cell-specific remodeling of the human interactome
+ekman2006	Ekman	2006	What properties characterize the hub proteins of the protein-protein interaction network o
+burger2008	Motter	2008	Predicting synthetic rescues in metabolic networks
+cong2019	Cong	2019	Protein interaction networks revealed by proteome coevolution
+humphreys2021	Humphreys	2021	Computed structures of core eukaryotic protein complexes
+evans2021	Evans	2021	Protein complex prediction with AlphaFold-Multimer
+bryant2022	Bryant	2022	Improved prediction of protein-protein interactions using AlphaFold2
+barabasi1999	Barabási	1999	Emergence of Scaling in Random Networks
+jeong2000	Jeong	2000	The large-scale organization of metabolic networks
+jeong2001	Jeong	2001	Lethality and centrality in protein networks
+barabasi2004	Barabási	2004	Network biology: understanding the cell's functional organization
+ideker2002	Ideker	2002	Discovering regulatory and signalling circuits in molecular 
+interaction networks
+yanai2002	Yanai	2002	The society of genes: networks of functional links between genes from comparative genomics
+rhodes2005	Rhodes	2005	Probabilistic model of the human protein-protein interaction network
+goh2007	Goh	2007	The human disease network
+lee2008	Lee	2008	A single gene network accurately predicts phenotypic effects of gene perturbation in Caeno
+guala2020	Guala	2019	Genome-wide functional association networks: background, data &amp; state-of-the-art resou
+orth2010	Orth	2010	What is flux balance analysis?
+lecun2015	LeCun	2015	Deep learning
+sapoval2022	Sapoval	2022	Current progress and open challenges for applying deep learning across the biosciences
+rabiner1989	Rabiner	1989	A tutorial on hidden Markov models and selected applications in speech recognition
+tarca2007	Tarca	2007	Machine Learning and Its Applications to Biology
+krogh2008	Krogh	2008	What are artificial neural networks?
+noble2006	Noble	2006	What is a support vector machine?
+lever2016	Lever	2016	Model selection and overfitting
+ching2018	Ching	2018	Opportunities and obstacles for deep learning in biology and medicine
+eraslan2019	Eraslan	2019	Deep learning: new computational modelling techniques for genomics
+jones2019	Jones	2019	Setting the standards for machine learning in biology
+walsh2021	Walsh	2021	DOME: recommendations for supervised machine learning validation in biology
+greener2022	Greener	2021	A guide to machine learning for biologists
+rives2021	Rives	2021	Biological structure and function emerge from scaling unsupervised learning to 250 million
+avsec2021	Avsec	2021	Effective gene expression prediction from sequence by integrating long-range interactions
+durbin1998	Durbin	1998	Biological Sequence Analysis

@@ -1,0 +1,85 @@
+# Genomics {#sec-genomics}
+
+::: {.callout-note title="From the exam description"}
+Methods for sequencing, algorithms for assembly, gene predictions, etc.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: from Sanger sequencing to short-read and long-read
+technologies; how reads become genomes (assembly) or are placed on a
+reference (mapping); calling variants; finding genes.
+:::
+
+## Key concepts
+
+- Sequencing technologies: Sanger, pyrosequencing/454, Illumina (sequencing by synthesis), PacBio (HiFi), Oxford Nanopore; read lengths, error profiles, cost
+- Shotgun sequencing; coverage (Lander–Waterman); paired-end and mate-pair reads
+- Assembly paradigms: overlap–layout–consensus, string graphs, de Bruijn graphs; repeats as the central problem; scaffolding
+- Assembly quality: N50, BUSCO, Assemblathon; telomere-to-telomere assemblies; haplotype-resolved assembly
+- Read mapping: hashing/seeds vs. Burrows–Wheeler/FM-index (Bowtie, BWA), long-read mapping (minimap2); mapping quality
+- Variant calling: SNPs, indels, structural variants; genotype likelihoods; GATK; deep-learning callers
+- Gene prediction: ab initio (HMM-based: GeneMark, GENSCAN), homology- and RNA-seq-based evidence; prokaryotic vs. eukaryotic gene finding
+- Metagenomics (overview)
+
+## Background reading
+
+- [DNA sequencing](https://en.wikipedia.org/wiki/DNA_sequencing)
+- [Sequence assembly](https://en.wikipedia.org/wiki/Sequence_assembly), [De Bruijn graph](https://en.wikipedia.org/wiki/De_Bruijn_graph)
+- [Burrows–Wheeler transform](https://en.wikipedia.org/wiki/Burrows%E2%80%93Wheeler_transform)
+- [Gene prediction](https://en.wikipedia.org/wiki/Gene_prediction)
+- [SNV calling from NGS data](https://en.wikipedia.org/wiki/SNV_calling_from_NGS_data)
+- [A tutorial on Burrows–Wheeler indexing methods](http://blog.thegrandlocus.com/2016/07/a-tutorial-on-burrows-wheeler-indexing-methods)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Reviews — start here
+
+- @goodwin2016 — ten years of next-generation sequencing technologies.
+- @compeau2011 — how to apply de Bruijn graphs to genome assembly.
+
+### Sequencing technologies
+
+- @sanger1977 — chain-terminating sequencing.
+- @smith1986 — fluorescence detection in automated sequencing.
+- @ronaghi1998 — pyrosequencing.
+- @margulies2005 — 454 sequencing in picolitre reactors.
+- @bentley2008 — Illumina reversible-terminator chemistry.
+- @jain2018 — nanopore sequencing of a human genome with ultra-long reads.
+
+### Genome assembly
+
+- @anson1999 — algorithms for whole-genome shotgun sequencing.
+- @myers2000 — whole-genome assembly of *Drosophila*.
+- @pevzner2001 — an Eulerian path approach to assembly.
+- ★ @myers2005 — the fragment assembly string graph.
+- @zerbino2008 — Velvet: de Bruijn graph assembly of short reads.
+- @bradnam2013 — Assemblathon 2: evaluating assemblers.
+- @cheng2021 — hifiasm: haplotype-resolved assembly from HiFi reads.
+- @nurk2022 — the complete (telomere-to-telomere) human genome.
+
+### Read mapping and variant calling
+
+- ★ @langmead2009 — Bowtie: ultrafast BWT-based alignment.
+- @li2009 — BWA.
+- @li2018 — minimap2.
+- @li2008 — mapping quality and variant calling (MAQ).
+- @marth1999 — a general approach to SNP discovery.
+- @li2011 — a statistical framework for SNP calling.
+- @depristo2011 — GATK: variation discovery and genotyping.
+- @poplin2018 — DeepVariant: variant calling with a deep neural network.
+
+### Gene prediction
+
+- @burge1997 — GENSCAN: gene structure prediction in human genomic DNA.
+- ★ @lukashin1998 — GeneMark.hmm.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

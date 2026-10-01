@@ -1,0 +1,63 @@
+# Genomes {#sec-genomes}
+
+::: {.callout-note title="From the exam description"}
+Fundamental differences in how different genomes are constructed. What is
+the difference between eukaryotic and prokaryotic genomes?
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: genome size and gene content across the tree of life;
+operons vs. split genes; non-coding DNA, repeats and transposons;
+chromosomes and 3D organisation; pan-genomes.
+:::
+
+## Key concepts
+
+- Genome size, gene number and gene density across bacteria, archaea and eukaryotes; the C-value paradox
+- Prokaryotic genome organisation: circular chromosomes, operons, plasmids, compact genomes, GC skew
+- Eukaryotic genome organisation: introns and splicing, alternative splicing, large intergenic regions, centromeres/telomeres
+- Repeats and transposable elements; segmental duplications
+- Non-coding RNAs and regulatory elements; what fraction is "functional" (ENCODE debate)
+- Organelle genomes and endosymbiosis
+- Pan-genomes: core vs. accessory genes; horizontal gene transfer
+- 3D genome organisation: chromatin, TADs (Hi-C)
+- Population-genetic explanations of genome complexity (Lynch)
+
+## Background reading
+
+- [What is a genome? (YourGenome)](https://www.yourgenome.org/theme/what-is-a-genome/)
+- [Genome](https://en.wikipedia.org/wiki/Genome), [Genome size](https://en.wikipedia.org/wiki/Genome_size), [C-value](https://en.wikipedia.org/wiki/C-value)
+- [Human genome](https://en.wikipedia.org/wiki/Human_genome)
+- [Introduction to genetics](https://en.wikipedia.org/wiki/Introduction_to_genetics)
+- [Operon](https://en.wikipedia.org/wiki/Operon), [Intron](https://en.wikipedia.org/wiki/Intron)
+- [Transposable element](https://en.wikipedia.org/wiki/Transposable_element)
+- [Pan-genome](https://en.wikipedia.org/wiki/Pan-genome)
+
+## Key papers
+
+### Reviews — start here
+
+- @koonin2008 — genomics of bacteria and archaea: the emerging dynamic view of the prokaryotic world.
+- @lynch2003 — the origins of genome complexity.
+- @koonin2011 — are there laws of genome evolution?
+
+### Landmark genomes
+
+- @fleischmann1995 — the first complete genome of a free-living organism (*Haemophilus influenzae*).
+- @lander2001 — the public human genome draft.
+- @venter2001 — the Celera human genome.
+- @nurk2022 — the complete human genome.
+
+### Genome function and organisation
+
+- @encode2012 — ENCODE: an integrated encyclopedia of DNA elements.
+- @liebermanaiden2009 — Hi-C: the 3D organisation of the human genome.
+- @tettelin2005 — the microbial pan-genome.
+- @treangen2011 — horizontal gene transfer in prokaryotes.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

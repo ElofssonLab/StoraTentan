@@ -1,0 +1,89 @@
+# Machine learning {#sec-machine-learning}
+
+::: {.callout-note title="From the exam description"}
+Fundamental knowledge about machine learning. How machine learning is used
+in bioinformatics. Recent progress in machine learning methodologies.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: supervised vs. unsupervised learning; classic models
+used in bioinformatics (HMMs, neural networks, SVMs, random forests); how
+to train and evaluate without fooling yourself (homology-aware splits,
+overfitting); deep learning architectures (CNNs, RNNs, transformers,
+diffusion) and protein/DNA language models.
+:::
+
+## Key concepts
+
+- Supervised, unsupervised and self-supervised learning; classification vs. regression
+- Hidden Markov models: Viterbi, forward–backward, Baum–Welch; applications (gene finding, profiles, TM topology)
+- Artificial neural networks: perceptron, backpropagation, gradient descent
+- Support vector machines, kernels; decision trees and random forests
+- Generalisation: overfitting, regularisation, cross-validation, train/validation/test splits
+- Bioinformatics pitfalls: homology between training and test sets (redundancy reduction), data leakage, class imbalance
+- Evaluation: accuracy, precision/recall, ROC and PR curves, MCC; benchmarking (CASP, CAFA)
+- Deep learning: convolutional and recurrent networks, attention and transformers, graph neural networks, diffusion models
+- Language models for proteins and DNA (ESM, embeddings); transfer learning
+- Interpretability and reporting standards (DOME)
+
+## Background reading
+
+- [Machine learning](https://en.wikipedia.org/wiki/Machine_learning), [Deep learning](https://en.wikipedia.org/wiki/Deep_learning)
+- [Hidden Markov model](https://en.wikipedia.org/wiki/Hidden_Markov_model)
+- [Artificial neural network](https://en.wikipedia.org/wiki/Neural_network_(machine_learning)), [Backpropagation](https://en.wikipedia.org/wiki/Backpropagation)
+- [Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine), [Random forest](https://en.wikipedia.org/wiki/Random_forest)
+- [Overfitting](https://en.wikipedia.org/wiki/Overfitting), [Regularization](https://en.wikipedia.org/wiki/Regularization_(mathematics)), [Cross-validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics))
+- [Transformer (deep learning architecture)](https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture))
+
+## Key papers
+
+::: {.callout-tip}
+★ = the 2021 version of the exam was based on @sapoval2022 together with
+@pevsner2015.
+:::
+
+### Reviews — start here
+
+- ★ @sapoval2022 — current progress and open challenges for deep learning across the biosciences.
+- @greener2022 — a guide to machine learning for biologists.
+- @tarca2007 — machine learning and its applications to biology.
+- @lecun2015 — deep learning.
+- @ching2018 — opportunities and obstacles for deep learning in biology and medicine.
+- @eraslan2019 — deep learning for genomics.
+
+### Short primers (Nature Biotechnology "What is…?" / Points of Significance)
+
+- @eddy2004 — what is a hidden Markov model?
+- @krogh2008 — what are artificial neural networks?
+- @noble2006 — what is a support vector machine?
+- @lever2016 — model selection and overfitting.
+
+### Classic
+
+- @rabiner1989 — a tutorial on hidden Markov models.
+- @krogh1994 — HMMs in computational biology.
+- @rost1993 — profiles + neural networks for secondary structure.
+
+### Good practice
+
+- @jones2019 — setting the standards for machine learning in biology.
+- @walsh2021 — DOME: recommendations for supervised machine learning validation in biology.
+
+### Modern architectures and applications
+
+- @vaswani2017 — attention is all you need (transformers).
+- @rives2021 — protein language models (ESM).
+- @jumper2021 — AlphaFold2 (see @sec-protein-structure).
+- @avsec2021 — Enformer: gene expression from sequence with long-range interactions.
+
+### Textbooks
+
+- @hastie2009 — *The Elements of Statistical Learning* (free PDF).
+- @durbin1998 — *Biological Sequence Analysis* (HMMs and probabilistic models).
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

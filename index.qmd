@@ -1,0 +1,77 @@
+# About this guide {.unnumbered}
+
+This book collects reading material for **Stora Tentan**, the 15 hp oral
+exam in bioinformatics for PhD students at the Department of Biochemistry
+and Biophysics (DBB), Stockholm University. It is built on the current exam
+description (2025) and on the more detailed reading lists that were used in
+earlier years.
+
+## What the exam is
+
+Stora Tentan should show that a student awarded a PhD from DBB has a good
+basic knowledge of bioinformatics, *wider than their own thesis area*. The
+exam assumes the knowledge needed to pass the department's advanced-level
+courses in bioinformatics and comparative genomics, but it is primarily a
+test of the ability to explain how bioinformatics methods are used to answer
+fundamental biological questions. Students are also expected to follow
+seminars and dissertations at DBB and SciLifeLab and to be aware of current
+international research.
+
+- Two examiners, about two hours.
+- No single required textbook. Zvelebil & Baum [@zvelebil2008] or Pevsner
+  [@pevsner2015] cover most areas, but they are not up to date — you need to
+  update your knowledge to the current state of the art (the proceedings of
+  the last few ISMB and ECCB meetings are a good start).
+- The exam is **not** about knowing every detail. You should be able to
+  discuss and reason about methods: how they work (algorithms), their
+  advantages and limitations, and when to use them.
+- Fundamental knowledge of the algorithms and limitations of established
+  methods for **sequence searching, protein structure prediction, phylogeny
+  and function annotation** is required.
+- Every exam is unique. Depending on how the first topic goes, other topics
+  may be covered in more or less depth, or not at all.
+
+Experience shows that discussing the exam with other PhD students is a very
+efficient way to prepare, and that online lectures often explain things
+better than textbooks.
+
+## How each chapter is organised
+
+Each of the twelve topic chapters follows the same structure:
+
+1. **Introduction** — a short overview of the topic.
+2. **Key concepts** — a checklist of things you should be able to explain.
+3. **Background reading** — open-access overviews (mostly Wikipedia and
+   tutorials) to get started.
+4. **Key papers** — reviews first, then classic papers and recent
+   developments. Papers marked ★ were *mandatory* in earlier reading lists
+   and are a good indication of the expected level.
+5. **Online lectures** — recorded lectures that explain the topic well.
+
+Full references are collected in [References](references.qmd); hover over a
+citation to see it.
+
+## Topics
+
+| Topic | What is covered |
+|---|---|
+| [Sequence searching](chapters/01-sequence-searching.qmd) | Alignment algorithms, substitution matrices, BLAST, profile HMMs, significance, MSA, motifs |
+| [Databases](chapters/02-databases.qmd) | Primary and derived databases, their hierarchy and relations |
+| [Evolution](chapters/03-evolution.qmd) | Homology, orthology/paralogy, gene duplication, selection, drift |
+| [Phylogeny](chapters/04-phylogeny.qmd) | Distance, parsimony, likelihood and Bayesian methods; models; support |
+| [Genomics](chapters/05-genomics.qmd) | Sequencing technologies, assembly, read mapping, variant calling, gene prediction |
+| [Genomes](chapters/06-genomes.qmd) | Prokaryotic vs. eukaryotic genome organisation, genome size and complexity |
+| [Expression analysis](chapters/07-expression.qmd) | Microarrays, RNA-seq, single-cell, normalisation, multiple testing |
+| [Proteomics](chapters/08-proteomics.qmd) | Mass spectrometry, peptide identification, quantification, FDR |
+| [Protein structure](chapters/09-protein-structure.qmd) | Structure, domains, secondary/tertiary prediction, AlphaFold, design, docking |
+| [Protein function](chapters/10-protein-function.qmd) | Function definitions (GO), annotation transfer, localisation, variant effects |
+| [Protein–protein interactions](chapters/11-protein-interactions.qmd) | Experimental and computational PPI methods, networks |
+| [Machine learning](chapters/12-machine-learning.qmd) | HMMs, neural networks, evaluation and overfitting, deep learning, language models |
+
+## Earlier versions of the instructions
+
+The reading lists from earlier years (in `data/`) contained a list of
+mandatory articles and a much longer list of background papers. These have
+been distributed over the topic chapters. A 2021 variant of the exam was
+instead based on Pevsner's textbook [@pevsner2015] together with the review
+by @sapoval2022; both remain excellent starting points.

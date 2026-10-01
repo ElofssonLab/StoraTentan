@@ -1,0 +1,72 @@
+# Proteomics {#sec-proteomics}
+
+::: {.callout-note title="From the exam description"}
+Different proteomics methods. How are these used, algorithms.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: mass-spectrometry-based proteomics — from proteins to
+peptides to spectra; identifying peptides by database search; controlling
+errors with target–decoy strategies; quantification; and complementary
+antibody- and affinity-based methods.
+:::
+
+## Key concepts
+
+- Bottom-up (shotgun) vs. top-down proteomics; LC-MS/MS; fragmentation and b/y ions
+- Peptide identification: database search (SEQUEST, Mascot, Andromeda), spectral libraries, de novo sequencing
+- Error control: target–decoy approach, peptide-spectrum-match FDR, Percolator; the protein inference problem
+- Acquisition strategies: data-dependent (DDA) vs. data-independent (DIA/SWATH) vs. targeted (SRM/PRM)
+- Quantification: label-free, SILAC, isobaric tags (TMT/iTRAQ)
+- Post-translational modifications (e.g. phosphoproteomics)
+- Interaction proteomics (AP-MS, cross-linking MS; see @sec-protein-interactions) and structural MS
+- Deep learning for spectrum and retention-time prediction
+- Antibody-based proteomics: the Human Protein Atlas
+- Repositories and standards: PRIDE/ProteomeXchange
+
+## Background reading
+
+- [Proteomics](https://en.wikipedia.org/wiki/Proteomics)
+- [Shotgun proteomics](https://en.wikipedia.org/wiki/Shotgun_proteomics)
+- [Tandem mass spectrometry](https://en.wikipedia.org/wiki/Tandem_mass_spectrometry)
+- [Peptide mass fingerprinting](https://en.wikipedia.org/wiki/Peptide_mass_fingerprinting)
+- [Data-independent acquisition](https://en.wikipedia.org/wiki/Data-independent_acquisition)
+- [SILAC](https://en.wikipedia.org/wiki/Stable_isotope_labeling_by_amino_acids_in_cell_culture), [Isobaric labeling](https://en.wikipedia.org/wiki/Isobaric_labeling)
+
+## Key papers
+
+### Reviews — start here
+
+- @aebersold2003 — mass spectrometry-based proteomics.
+- @aebersold2016 — mass-spectrometric exploration of proteome structure and function.
+- @nesvizhskii2010 — computational methods and error-rate estimation for peptide and protein identification.
+- @ludwig2018 — data-independent acquisition-based proteomics: a tutorial.
+
+### Identification and error control
+
+- @eng1994 — SEQUEST: matching spectra to sequences.
+- @perkins1999 — Mascot: probability-based protein identification.
+- @elias2007 — the target–decoy search strategy.
+- @kall2007 — Percolator: semi-supervised learning for peptide identification.
+
+### Quantification and acquisition
+
+- @cox2008 — MaxQuant.
+- @gillet2012 — SWATH-MS.
+- @demichev2020 — DIA-NN: neural networks for DIA data.
+- @gessulat2019 — Prosit: deep-learning prediction of fragment spectra.
+
+### Proteome maps and resources
+
+- @kim2014 — a draft map of the human proteome.
+- @wilhelm2014 — mass-spectrometry-based draft of the human proteome.
+- @uhlen2015 — the tissue-based map of the human proteome (Human Protein Atlas).
+- @perezriverol2022 — the PRIDE database.
+- @ideker2001 — integrated genomic and proteomic analysis of a perturbed network.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

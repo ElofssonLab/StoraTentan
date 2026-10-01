@@ -1,0 +1,39 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Stora Tentan in Bioinformatics"
+  subtitle: "Reading guide for the oral PhD exam at DBB, Stockholm University"
+  author: "Arne Elofsson"
+  date: last-modified
+  chapters:
+    - index.qmd
+    - part: "Topics"
+      chapters:
+        - chapters/01-sequence-searching.qmd
+        - chapters/02-databases.qmd
+        - chapters/03-evolution.qmd
+        - chapters/04-phylogeny.qmd
+        - chapters/05-genomics.qmd
+        - chapters/06-genomes.qmd
+        - chapters/07-expression.qmd
+        - chapters/08-proteomics.qmd
+        - chapters/09-protein-structure.qmd
+        - chapters/10-protein-function.qmd
+        - chapters/11-protein-interactions.qmd
+        - chapters/12-machine-learning.qmd
+    - references.qmd
+  appendices:
+    - chapters/textbooks.qmd
+
+bibliography: references.bib
+link-citations: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false
+    reference-location: margin
+    citation-location: document

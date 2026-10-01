@@ -1,0 +1,81 @@
+# Expression analysis {#sec-expression}
+
+::: {.callout-note title="From the exam description"}
+Expression analysis of genes and proteins: methods, algorithms, statistics.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: measuring transcripts (microarrays → RNA-seq →
+single-cell), from reads to counts, normalisation, differential expression,
+clustering and dimensionality reduction, and the statistics of testing
+thousands of genes at once.
+:::
+
+## Key concepts
+
+- Microarrays: principle, normalisation, limitations
+- RNA-seq workflow: library preparation, spliced alignment (STAR) vs. pseudo-alignment (kallisto, Salmon), transcript assembly
+- Normalisation: library size, RPKM/FPKM/TPM, TMM, size factors
+- Differential expression: count models (negative binomial), dispersion estimation, DESeq2, edgeR
+- Multiple testing: Bonferroni/FWER, false discovery rate (Benjamini–Hochberg), q-values, empirical Bayes
+- Clustering (hierarchical, k-means) and dimensionality reduction (PCA, t-SNE, UMAP)
+- Gene set enrichment analysis
+- Single-cell RNA-seq: sparsity, normalisation, clustering, cell-type annotation; spatial transcriptomics
+- Protein-level expression (see @sec-proteomics); the Human Protein Atlas
+
+## Background reading
+
+- [RNA-Seq](https://en.wikipedia.org/wiki/RNA-Seq)
+- [DNA microarray](https://en.wikipedia.org/wiki/DNA_microarray)
+- [Single-cell transcriptomics](https://en.wikipedia.org/wiki/Single-cell_transcriptomics)
+- [Multiple comparisons problem](https://en.wikipedia.org/wiki/Multiple_comparisons_problem), [Bonferroni correction](https://en.wikipedia.org/wiki/Bonferroni_correction), [False discovery rate](https://en.wikipedia.org/wiki/False_discovery_rate)
+- [Principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
+- [Gene set enrichment analysis](https://en.wikipedia.org/wiki/Gene_set_enrichment_analysis)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Reviews — start here
+
+- ★ @wang2009 — RNA-seq: a revolutionary tool for transcriptomics.
+- @conesa2016 — a survey of best practices for RNA-seq data analysis.
+- @stark2019 — RNA sequencing: the teenage years.
+- @heumos2023 — best practices for single-cell analysis across modalities.
+- @quackenbush2001 — computational analysis of microarray data.
+
+### Microarrays
+
+- @fodor1991 — light-directed parallel synthesis (the basis of Affymetrix arrays).
+- @schena1995 — quantitative monitoring of expression with cDNA microarrays.
+- @eisen1998 — cluster analysis and display of genome-wide expression.
+- @su2004 — a gene atlas of mouse and human transcriptomes.
+
+### RNA-seq methods
+
+- @mortazavi2008 — mapping and quantifying mammalian transcriptomes by RNA-seq.
+- @trapnell2010 — Cufflinks: transcript assembly and quantification.
+- @oshlack2010 — from RNA-seq reads to differential expression.
+- @robinson2010 — edgeR.
+- @love2014 — DESeq2.
+- @dobin2013 — STAR spliced aligner.
+- @bray2016 — kallisto: near-optimal probabilistic quantification.
+- @patro2017 — Salmon.
+- @subramanian2005 — gene set enrichment analysis (GSEA).
+- @luecken2019 — current best practices in single-cell RNA-seq analysis.
+
+### Statistics
+
+- ★ @benjamini1995 — controlling the false discovery rate.
+- @storey2003 — statistical significance for genome-wide studies (q-values).
+- @efron2002 — empirical Bayes methods and FDR for microarrays.
+- @lever2017 — principal component analysis (Points of Significance).
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

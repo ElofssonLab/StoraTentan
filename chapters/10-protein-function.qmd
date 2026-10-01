@@ -1,0 +1,82 @@
+# Protein function {#sec-protein-function}
+
+::: {.callout-note title="From the exam description"}
+Classifications, prediction methods, and definitions.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: what "function" means (molecular, cellular,
+biological); controlled vocabularies (GO, EC); annotation transfer by
+homology and its pitfalls; non-homology methods (genomic context,
+networks); prediction of sorting signals and localisation; predicting the
+effect of variants; how function prediction is evaluated (CAFA).
+:::
+
+## Key concepts
+
+- Definitions of function; Gene Ontology (MF, BP, CC), evidence codes, EC numbers
+- Annotation transfer by homology: identity thresholds, domain architecture, orthologs vs. paralogs, error propagation
+- Family/domain-based annotation (Pfam, InterPro)
+- Genomic-context methods: gene fusion (Rosetta stone), gene neighbourhood, phylogenetic profiles
+- Network-based function prediction (guilt by association; see @sec-protein-interactions)
+- Structure-based function prediction
+- Sorting signals and subcellular localisation: signal peptides, transmembrane regions, SignalP, DeepLoc
+- Variant effect prediction: conservation, unsupervised models (EVE), AlphaMissense
+- Critical assessment: CAFA; why function prediction is hard to evaluate
+
+## Background reading
+
+- [Protein function prediction](https://en.wikipedia.org/wiki/Protein_function_prediction)
+- [Gene Ontology](https://en.wikipedia.org/wiki/Gene_Ontology)
+- [Enzyme Commission number](https://en.wikipedia.org/wiki/Enzyme_Commission_number)
+- [Signal peptide](https://en.wikipedia.org/wiki/Signal_peptide)
+- [Protein subcellular localization prediction](https://en.wikipedia.org/wiki/Protein_subcellular_localization_prediction)
+- [Phylogenetic profiling](https://en.wikipedia.org/wiki/Phylogenetic_profiling)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Reviews — start here
+
+- @whisstock2003 — prediction of protein function from sequence and structure.
+- @radivojac2013 — CAFA: large-scale evaluation of function prediction.
+- @zhou2019 — CAFA3.
+
+### Ontologies
+
+- @ashburner2000 — the Gene Ontology.
+- @go2023 — the Gene Ontology knowledgebase in 2023.
+
+### Genomic context and non-homology methods
+
+- @marcotte1999science — detecting function and interactions from genome sequences (Rosetta stone).
+- @marcotte1999nature — a combined algorithm for genome-wide function prediction.
+- @tsoka2000 — metabolic enzymes are frequently involved in gene fusion.
+- @enright2001 — functional associations from exhaustive detection of gene fusions.
+- @snel2000 — gene fusion versus gene fission.
+- @doolittle1999 — "Do you dig my groove?" (commentary on the above).
+- ★ @garzon2016 — a computational interactome and functional annotation of the human proteome.
+
+### Sorting signals and localisation
+
+- @vonheijne1986 — a new method for predicting signal-sequence cleavage sites.
+- @nielsen1997 — SignalP: neural-network prediction of signal peptides.
+- @petersen2011 — SignalP 4.0: discriminating signal peptides from transmembrane regions.
+- @teufel2022 — SignalP 6.0: all types of signal peptides with protein language models.
+- ★ @almagro2017 — DeepLoc: subcellular localisation with deep learning.
+- @thumuluri2022 — DeepLoc 2.0.
+
+### Variant effect prediction
+
+- @frazer2021 — EVE: disease variant prediction from evolutionary data.
+- @cheng2023 — AlphaMissense.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

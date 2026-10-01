@@ -1,0 +1,88 @@
+# Evolution {#sec-evolution}
+
+::: {.callout-note title="From the exam description"}
+How does evolution affect the current genomes? Gene duplication,
+evolutionary pressure.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: mutation, selection and drift; the neutral theory and
+the molecular clock; homology (orthology, paralogy, xenology); gene and
+genome duplication; domain rearrangements; horizontal gene transfer.
+:::
+
+## Key concepts
+
+- Mutation, selection, genetic drift, effective population size; genetic hitchhiking
+- Neutral theory and the molecular clock
+- Homology, orthology, paralogy (in- and out-paralogs), xenology; analogy/convergence
+- Orthology inference: reciprocal best hits, COGs, InParanoid, OrthoFinder; tree-based vs. graph-based methods
+- Gene duplication and its fates (non-/sub-/neofunctionalisation); whole-genome duplication (Ohno's 2R hypothesis)
+- Detecting selection: dN/dS (Ka/Ks), site and branch models
+- Protein domain evolution: domain combinations, gene fusion and fission
+- Horizontal gene transfer and its role in prokaryotes
+- Gene trees vs. species trees, reconciliation
+
+## Background reading
+
+- [Genome evolution](https://en.wikipedia.org/wiki/Genome_evolution)
+- [Sequence homology](https://en.wikipedia.org/wiki/Sequence_homology)
+- [Gene duplication](https://en.wikipedia.org/wiki/Gene_duplication)
+- [Neutral theory of molecular evolution](https://en.wikipedia.org/wiki/Neutral_theory_of_molecular_evolution)
+- [Molecular clock](https://en.wikipedia.org/wiki/Molecular_clock)
+- [Genetic drift](https://en.wikipedia.org/wiki/Genetic_drift), [Genetic hitchhiking](https://en.wikipedia.org/wiki/Genetic_hitchhiking)
+- [Ka/Ks ratio](https://en.wikipedia.org/wiki/Ka/Ks_ratio)
+- [Horizontal gene transfer](https://en.wikipedia.org/wiki/Horizontal_gene_transfer)
+- [Synteny](https://en.wikipedia.org/wiki/Synteny)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Reviews — start here
+
+- ★ @altenhoff2019 — inferring orthology and paralogy.
+- @koonin2005 — orthologs, paralogs and evolutionary genomics.
+- @koonin2011 — are there laws of genome evolution?
+- @doolittle2010 — the roots of bioinformatics in protein evolution.
+
+### Classic papers
+
+- @zuckerkandl1963 — chemical paleogenetics: ancestral reconstruction.
+- @kimura1968 — evolutionary rate at the molecular level (neutral theory).
+- @ohno1968 — evolution by gene duplication.
+- @fitch1970 — distinguishing homologous from analogous proteins (orthology/paralogy defined).
+- @langley1974 — constancy of the rate of molecular evolution.
+- @goodman1979 — reconciling gene trees with species trees.
+- @fitch2000 — homology: a personal view.
+
+### Gene duplication and genome complexity
+
+- @lynch2000 — the evolutionary fate and consequences of duplicate genes.
+- @lynch2003 — the origins of genome complexity.
+
+### Orthology and comparative genomics
+
+- @tatusov1997 — clusters of orthologous groups (COGs).
+- @remm2001 — InParanoid: orthologs and in-paralogs.
+- @emms2019 — OrthoFinder.
+
+### Domains and protein evolution
+
+- @apic2001 — domain combinations in the three domains of life.
+- @bjorklund2005 — domain rearrangements in protein evolution.
+- @levy2008 — assembly of protein complexes reflects evolution.
+
+### Selection and horizontal transfer
+
+- @yang2000 — statistical methods for detecting molecular adaptation.
+- @treangen2011 — horizontal transfer, not duplication, drives gene family expansion in prokaryotes.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

@@ -1,0 +1,86 @@
+# Protein–protein interactions {#sec-protein-interactions}
+
+::: {.callout-note title="From the exam description"}
+Experimental and computational methods to analyse which proteins interact
+and how.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: binary vs. co-complex interactions; high-throughput
+experimental screens and their error rates; computational prediction from
+genomic context, coevolution and structure (AlphaFold-multimer); network
+biology — topology, hubs, modules, and functional association networks.
+:::
+
+## Key concepts
+
+- Experimental methods: yeast two-hybrid (binary), affinity purification–MS (co-complex), cross-linking MS, protein-fragment complementation; their biases and false-positive/negative rates
+- Large interactome maps: HuRI, BioPlex; databases (STRING, IntAct, BioGRID)
+- Computational prediction: genomic context, coevolution (paired MSAs), docking, deep learning (AlphaFold-multimer)
+- Predicting interfaces and complex structures; evaluation (DockQ)
+- Network concepts: degree distribution, scale-free networks, clustering coefficient, hubs, modules
+- Functional association networks: integrating heterogeneous evidence (Bayesian integration)
+- Gene regulatory networks and network inference from perturbation
+- Disease networks; systems biology; metabolic modelling (flux balance analysis)
+
+## Background reading
+
+- [Protein–protein interaction](https://en.wikipedia.org/wiki/Protein%E2%80%93protein_interaction)
+- [Two-hybrid screening](https://en.wikipedia.org/wiki/Two-hybrid_screening)
+- [Interactome](https://en.wikipedia.org/wiki/Interactome)
+- [Biological network](https://en.wikipedia.org/wiki/Biological_network), [Clustering coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient), [Scale-free network](https://en.wikipedia.org/wiki/Scale-free_network)
+- [Systems biology](https://en.wikipedia.org/wiki/Systems_biology), [Gene regulatory network](https://en.wikipedia.org/wiki/Gene_regulatory_network)
+- [Pathway analysis](https://en.wikipedia.org/wiki/Pathway_analysis), [Metabolic network modelling](https://en.wikipedia.org/wiki/Metabolic_network_modelling), [Flux balance analysis](https://en.wikipedia.org/wiki/Flux_balance_analysis)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Reviews — start here
+
+- ★ @guala2020 — genome-wide functional association networks.
+- @barabasi2004 — network biology: understanding the cell's functional organisation.
+
+### Experimental interactomes
+
+- @uetz2000 — yeast two-hybrid screen of the yeast proteome.
+- @gavin2002 — complexes by tandem affinity purification.
+- @ho2002 — complexes by mass spectrometry.
+- @vonmering2002 — comparative assessment of large-scale interaction data sets.
+- ★ @rolland2014 — a proteome-scale map of the human interactome.
+- @luck2020 — HuRI: a reference map of the human binary interactome.
+- @huttlin2021 — BioPlex: dual proteome-scale networks.
+
+### Computational prediction
+
+- See genomic-context papers in @sec-protein-function.
+- @burger2008 — interaction partners from sequence alignments (Bayesian method).
+- @ekman2006 — what properties characterise hub proteins?
+- @cong2019 — interaction networks revealed by proteome coevolution.
+- @humphreys2021 — structures of core eukaryotic complexes (coevolution + AlphaFold).
+- @evans2021 — AlphaFold-Multimer.
+- @bryant2022 — improved prediction of protein–protein interactions using AlphaFold2.
+
+### Networks and systems biology
+
+- @barabasi1999 — emergence of scaling in random networks.
+- @jeong2000 — large-scale organisation of metabolic networks.
+- @jeong2001 — lethality and centrality in protein networks.
+- @ideker2000 — discovery of regulatory interactions through perturbation.
+- @ideker2001 — integrated genomic and proteomic analyses.
+- @ideker2002 — discovering regulatory and signalling circuits.
+- @yanai2002 — the society of genes: networks from comparative genomics.
+- @rhodes2005 — probabilistic model of the human interaction network.
+- @goh2007 — the human disease network.
+- @lee2008 — a gene network predicts phenotypes of perturbation in *C. elegans*.
+- @szklarczyk2023 — STRING.
+- @orth2010 — what is flux balance analysis?
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

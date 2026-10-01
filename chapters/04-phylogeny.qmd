@@ -1,0 +1,79 @@
+# Phylogeny {#sec-phylogeny}
+
+::: {.callout-note title="From the exam description"}
+Advantages and limitations of different methods.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: trees as hypotheses of descent; distance, parsimony,
+maximum-likelihood and Bayesian methods; substitution models; assessing
+support; phylogenomics and the tree of life.
+:::
+
+## Key concepts
+
+- Tree terminology: rooted/unrooted, topology, branch lengths, clades, outgroups; number of possible trees
+- Distance methods: UPGMA (and the molecular-clock assumption), neighbour joining
+- Maximum parsimony: Fitch algorithm; long-branch attraction
+- Maximum likelihood: Felsenstein's pruning algorithm, tree search heuristics (RAxML, IQ-TREE)
+- Bayesian inference: priors, MCMC, posterior probabilities (MrBayes)
+- Substitution models: JC69, K80, HKY, GTR; rate heterogeneity (Γ); model selection
+- Support: bootstrap, posterior probabilities, approximate tests
+- Alignment uncertainty and its effect on trees
+- Phylogenomics: concatenation vs. coalescent/species-tree methods; incomplete lineage sorting; HGT and phylogenetic networks
+- The tree of life and its root(s)
+
+## Background reading
+
+- [Understanding Evolution: Phylogenetic systematics](https://evolution.berkeley.edu/phylogenetic-systematics/)
+- [Phylogenetics](https://en.wikipedia.org/wiki/Phylogenetics), [Phylogenetic tree](https://en.wikipedia.org/wiki/Phylogenetic_tree)
+- [Computational phylogenetics](https://en.wikipedia.org/wiki/Computational_phylogenetics)
+- [Models of DNA evolution](https://en.wikipedia.org/wiki/Models_of_DNA_evolution), [Substitution model](https://en.wikipedia.org/wiki/Substitution_model)
+- [UPGMA](https://en.wikipedia.org/wiki/UPGMA), [Neighbor joining](https://en.wikipedia.org/wiki/Neighbor_joining)
+- [Bootstrapping (statistics)](https://en.wikipedia.org/wiki/Bootstrapping_(statistics))
+- [Phylogenomics](https://en.wikipedia.org/wiki/Phylogenomics), [Phylogenetic network](https://en.wikipedia.org/wiki/Phylogenetic_network)
+- [Tree of life (biology)](https://en.wikipedia.org/wiki/Tree_of_life_(biology))
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Reviews — start here
+
+- @yang2012 — molecular phylogenetics: principles and practice.
+- @kapli2020 — phylogenetic tree building in the genomic age.
+- @delsuc2005 — phylogenomics and the reconstruction of the tree of life.
+- @steel2000 — parsimony, likelihood and the role of models.
+
+### Classic methods
+
+- @fitch1971 — minimum change on a given topology (parsimony).
+- ★ @felsenstein1981 — maximum-likelihood trees from DNA sequences.
+- @felsenstein1985 — confidence limits on phylogenies: the bootstrap.
+- @saitou1987 — neighbour joining.
+- @huelsenbeck2001 — Bayesian inference of phylogeny.
+- @thorne1991 — an evolutionary model for maximum-likelihood alignment (TKF91).
+
+### Alignment uncertainty
+
+- @redelings2005 — joint Bayesian estimation of alignment and phylogeny.
+- @wong2008 — alignment uncertainty and genomic analysis.
+
+### Software
+
+- @stamatakis2014 — RAxML.
+- @minh2020 — IQ-TREE 2.
+- @ronquist2012 — MrBayes 3.2.
+
+### Tree of life
+
+- @hug2016 — a new view of the tree of life.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

@@ -1,0 +1,99 @@
+# Sequence searching {#sec-sequence-searching}
+
+::: {.callout-note title="From the exam description"}
+Both historical and state-of-the-art methods are used for speed and
+accuracy. Understanding the advantages of different algorithms is essential.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction based on open-access material: homology vs. similarity,
+dynamic programming, heuristics for speed, profiles and HMMs for
+sensitivity, and how significance (E-values) is estimated.
+:::
+
+## Key concepts
+
+- Homology vs. similarity; why similarity implies homology only above a threshold
+- Global (Needleman–Wunsch) vs. local (Smith–Waterman) alignment; dynamic programming; gap penalties (linear, affine)
+- Substitution matrices: PAM vs. BLOSUM, how they are derived, log-odds scores
+- Heuristic search: FASTA, BLAST (seeds, extension, two-hit), BLAT; speed vs. sensitivity
+- Statistical significance: extreme value distribution, E-values, bit scores, multiple testing
+- Profiles: PSI-BLAST, position-specific scoring matrices, pseudocounts, profile corruption
+- Profile hidden Markov models: HMMER, forward/backward, Viterbi; HMM–HMM comparison (HHsearch/HHblits)
+- Modern fast search: MMseqs2, DIAMOND; structure-based search (Foldseek)
+- Indexing for exact/short matches: suffix trees/arrays, Burrows–Wheeler transform (see also @sec-genomics)
+- Multiple sequence alignment: progressive alignment, consistency (T-Coffee), iterative refinement (MUSCLE, MAFFT, Clustal Omega)
+- Motif finding: PSSMs/sequence logos, Gibbs sampling, MEME
+
+## Background reading
+
+- [Sequence homology](https://en.wikipedia.org/wiki/Sequence_homology)
+- [Sequence alignment](https://en.wikipedia.org/wiki/Sequence_alignment)
+- [Needleman–Wunsch algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
+- [Smith–Waterman algorithm](https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm)
+- [Substitution matrix](https://en.wikipedia.org/wiki/Substitution_matrix), [BLOSUM](https://en.wikipedia.org/wiki/BLOSUM), [PAM](https://en.wikipedia.org/wiki/Point_accepted_mutation)
+- [BLAST](https://en.wikipedia.org/wiki/BLAST_(biotechnology)), [FASTA](https://en.wikipedia.org/wiki/FASTA)
+- [NCBI: The Statistics of Sequence Similarity Scores](https://www.ncbi.nlm.nih.gov/BLAST/tutorial/Altschul-1.html)
+- [Hidden Markov model](https://en.wikipedia.org/wiki/Hidden_Markov_model), [Forward–backward algorithm](https://en.wikipedia.org/wiki/Forward%E2%80%93backward_algorithm)
+- [Additive smoothing ("pseudocounts")](https://en.wikipedia.org/wiki/Additive_smoothing)
+- [Multiple comparisons problem](https://en.wikipedia.org/wiki/Multiple_comparisons_problem), [Family-wise error rate](https://en.wikipedia.org/wiki/Family-wise_error_rate)
+- [Multiple sequence alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
+- [A tutorial on Burrows–Wheeler indexing methods](http://blog.thegrandlocus.com/2016/07/a-tutorial-on-burrows-wheeler-indexing-methods)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Reviews — start here
+
+- @pearson2013 — an introduction to similarity searching, homology inference and statistics; the best single starting point.
+- @eddy2004 — "What is a hidden Markov model?" (two pages).
+- @lambert2003 — review of common sequence alignment methods.
+
+### Pairwise alignment and substitution matrices
+
+- @needleman1970 — global alignment by dynamic programming.
+- ★ @smith1981 — local alignment.
+- @dayhoff1978 — PAM matrices.
+- @henikoff1992 — BLOSUM matrices.
+
+### Heuristic database search
+
+- @pearson1988 — FASTA.
+- @altschul1990 — the original BLAST.
+- ★ @altschul1997 — gapped BLAST and PSI-BLAST.
+- @kent2002 — BLAT, for fast genome-scale alignment.
+- @steinegger2017 — MMseqs2, sensitive search at scale.
+- @buchfink2021 — DIAMOND, BLAST-level sensitivity at much higher speed.
+
+### Profiles and hidden Markov models
+
+- @krogh1994 — profile HMMs for protein families.
+- @park1998 — profile methods find three times as many remote homologues as pairwise methods.
+- @soding2005 — HMM–HMM comparison (HHsearch).
+- @eddy2008 — a probabilistic model of local alignment and significance estimation.
+- ★ @eddy2011 — HMMER3: accelerated profile HMM searches.
+- ★ @remmert2012 — HHblits.
+- @vankempen2024 — Foldseek: searching with structure (3Di alphabet).
+
+### Multiple sequence alignment
+
+- @notredame2000 — T-Coffee (consistency).
+- @edgar2004 — MUSCLE.
+- @sievers2011 — Clustal Omega.
+- @katoh2013 — MAFFT.
+
+### Motif finding
+
+- @lawrence1993 — Gibbs sampling for subtle motifs.
+- @bailey1994 — MEME (expectation maximisation).
+- @stormo2000 — representation and discovery of DNA binding sites.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

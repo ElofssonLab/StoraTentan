@@ -1,0 +1,74 @@
+# Databases {#sec-databases}
+
+::: {.callout-note title="From the exam description"}
+Knowledge of bioinformatics' most important databases and understanding
+their hierarchy and relationships.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: primary (archival) vs. secondary (curated/derived)
+databases; the INSDC collaboration; sequence → family → structure →
+function → interaction databases; identifiers and cross-references.
+:::
+
+## Key concepts
+
+- Primary nucleotide archives: INSDC (GenBank, ENA, DDBJ), SRA/ENA reads
+- Genome databases and browsers: Ensembl, UCSC, NCBI RefSeq
+- Protein sequence databases: UniProtKB (Swiss-Prot vs. TrEMBL), UniRef, UniParc, metagenomic sequence sets
+- Protein families and domains: Pfam, InterPro (member databases), CDD
+- Structure: PDB/wwPDB, EMDB; structure classifications SCOP, CATH, ECOD; predicted structures (AlphaFold DB)
+- Function and pathways: Gene Ontology, KEGG, Reactome
+- Interactions: STRING, IntAct, BioGRID
+- Expression and proteomics repositories: GEO, ArrayExpress, PRIDE
+- Curation vs. automatic annotation; error propagation; redundancy
+- Retrieval systems: Entrez, EBI Search, programmatic access (APIs)
+
+## Background reading
+
+- [Biological database](https://en.wikipedia.org/wiki/Biological_database)
+- [List of biological databases](https://en.wikipedia.org/wiki/List_of_biological_databases)
+- [UniProt — about](https://www.uniprot.org/help/about)
+- [Entrez](https://en.wikipedia.org/wiki/Entrez)
+- [EMDB](https://www.ebi.ac.uk/emdb/)
+- [NAR Database Issue and online Molecular Biology Database Collection](https://www.oxfordjournals.org/nar/database/c/)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists. The *Nucleic Acids Research* database
+issue (every January) has an up-to-date paper for nearly every major
+database — read the most recent one.
+:::
+
+### Sequences and genomes
+
+- @uniprot2023 — UniProt.
+- @cunningham2022 — Ensembl.
+
+### Protein families and domains
+
+- ★ @sonnhammer1997 — Pfam: domain families from seed alignments.
+- @mistry2021 — Pfam, recent version.
+- @paysanlafosse2023 — InterPro.
+
+### Structures and structure classification
+
+- @berman2000 — the Protein Data Bank.
+- @murzin1995 — SCOP.
+- @sillitoe2021 — CATH.
+- ★ @cheng2014 — ECOD: an evolutionary classification of protein domains.
+- @varadi2022 — AlphaFold Protein Structure Database.
+
+### Function and interactions
+
+- @ashburner2000 — the Gene Ontology.
+- @go2023 — the Gene Ontology knowledgebase in 2023.
+- @szklarczyk2023 — STRING.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

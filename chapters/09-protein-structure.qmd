@@ -1,0 +1,132 @@
+# Protein structure {#sec-protein-structure}
+
+::: {.callout-note title="From the exam description"}
+Knowledge of protein structure including domains and different methods to
+predict protein structure.
+:::
+
+## Introduction
+
+::: {.callout-warning title="To be written"}
+Short introduction: the protein folding problem (Anfinsen, Levinthal);
+secondary, tertiary and quaternary structure; domains and folds;
+experimental structure determination; the path from secondary structure
+prediction through homology modelling, fold recognition, fragment assembly
+and coevolution to AlphaFold; membrane proteins; design and docking.
+:::
+
+## Key concepts
+
+- Levels of protein structure; packing of helices and sheets; domains, folds, superfamilies
+- Anfinsen's dogma and Levinthal's paradox
+- Experimental methods: X-ray crystallography (R-free), NMR, cryo-EM; resolution and model quality
+- Structure comparison: RMSD, TM-score, structural alignment (DALI, TM-align)
+- Secondary structure prediction: Chou–Fasman, GOR, neural networks with profiles (PHD, PSIPRED)
+- Homology (comparative) modelling: template selection, alignment, MODELLER
+- Fold recognition/threading: 3D profiles, threading potentials, profile–profile methods
+- De novo prediction: fragment assembly (Rosetta), energy functions, sampling
+- Coevolution: direct-coupling analysis, contact prediction, deep-learning contact maps
+- AlphaFold2 (MSA + attention, structure module, pLDDT, PAE), RoseTTAFold, protein language models (ESMFold), AlphaFold3
+- Evaluation: CASP and its metrics (GDT_TS, lDDT)
+- Membrane proteins: hydrophobicity, positive-inside rule, topology prediction (TMHMM, DeepTMHMM)
+- Molecular dynamics (principles); docking and scoring functions
+- Protein design: from Dahiyat & Mayo to Rosetta, ProteinMPNN and RFdiffusion
+
+## Background reading
+
+- [Protein structure](https://en.wikipedia.org/wiki/Protein_structure), [Protein domain](https://en.wikipedia.org/wiki/Protein_domain)
+- [Protein folding](https://en.wikipedia.org/wiki/Protein_folding)
+- [Anfinsen's dogma](https://en.wikipedia.org/wiki/Anfinsen%27s_dogma), [Levinthal's paradox](https://en.wikipedia.org/wiki/Levinthal%27s_paradox)
+- [Protein structure prediction](https://en.wikipedia.org/wiki/Protein_structure_prediction)
+- [Homology modeling](https://en.wikipedia.org/wiki/Homology_modeling), [Threading](https://en.wikipedia.org/wiki/Threading_(protein_sequence))
+- [AlphaFold](https://en.wikipedia.org/wiki/AlphaFold)
+- [CASP](https://en.wikipedia.org/wiki/CASP)
+- [Membrane topology](https://en.wikipedia.org/wiki/Membrane_topology)
+- [Docking (molecular)](https://en.wikipedia.org/wiki/Docking_(molecular)), [Protein design](https://en.wikipedia.org/wiki/Protein_design)
+
+## Key papers
+
+::: {.callout-tip}
+★ = mandatory in earlier reading lists.
+:::
+
+### Fundamentals
+
+- @anfinsen1973 — principles that govern the folding of protein chains.
+- @levinthal1966 — molecular model-building by computer.
+- @chothia1977 — packing of α-helices and β-sheets.
+- @holm1996 — mapping the protein universe.
+
+### Domains and classification
+
+See also the structure classification papers in @sec-databases.
+
+- @reeves2006 — structural diversity of domain superfamilies in CATH.
+- @zhang2005 — TM-align: structural alignment with TM-score.
+
+### Experimental structure determination
+
+- @brunger1992 — the free R value.
+- @scheres2012 — a Bayesian view on cryo-EM structure determination.
+
+### Secondary structure prediction
+
+- @chou1974a, @chou1974b — Chou–Fasman parameters and prediction.
+- @garnier1978 — GOR: information-theoretic prediction.
+- ★ @rost1993 — PHD: profiles + neural networks, >70% accuracy.
+- @jones1999 — PSIPRED: prediction based on position-specific scoring matrices.
+
+### Homology modelling and fold recognition
+
+- ★ @sali1993 — MODELLER: comparative modelling by satisfaction of spatial restraints.
+- @bowie1991 — 3D profiles: identifying sequences that fit a known structure.
+- @jones1992 — threading: a new approach to fold recognition.
+- @fischer1996 — fold recognition using sequence-derived predictions.
+
+### De novo prediction and coevolution
+
+- @simons1997 — Rosetta fragment assembly.
+- ★ @bradley2005 — high-resolution de novo prediction for small proteins.
+- @weigt2009 — direct coupling analysis of residue contacts.
+- @marks2011 — 3D structure computed from evolutionary sequence variation.
+- ★ @marks2012 — review: protein structure prediction from sequence variation.
+- ★ @wang2017 — RaptorX: contact prediction with ultra-deep learning.
+
+### Deep-learning structure prediction
+
+- @senior2020 — AlphaFold (CASP13).
+- @jumper2021 — AlphaFold2.
+- @baek2021 — RoseTTAFold.
+- @lin2023 — ESMFold: structure prediction from a language model.
+- @abramson2024 — AlphaFold3: complexes with proteins, nucleic acids and ligands.
+- @kryshtafovych2021 — CASP14 assessment.
+
+### Membrane proteins
+
+- ★ @vonheijne1992 — hydrophobicity analysis and the positive-inside rule.
+- @krogh2001 — TMHMM: topology prediction with a hidden Markov model.
+- @elofsson2007 — membrane protein structure: prediction versus reality.
+- @hallgren2022 — DeepTMHMM.
+
+### Molecular dynamics and docking
+
+- @mccammon1977 — the first MD simulation of a protein.
+- @kuntz1982 — a geometric approach to macromolecule–ligand interactions (DOCK).
+- @meng1992 — grid-based docking.
+- @bohm1994 — an empirical scoring function for binding affinity.
+- ★ @muegge1999 — a knowledge-based scoring function (PMF).
+- @warren2006 — a critical assessment of docking programs and scoring functions.
+
+### Protein design
+
+- @dahiyat1997 — fully automated de novo design.
+- @jiang2008 — computational design of retro-aldol enzymes.
+- @koga2012 — principles for designing ideal protein structures.
+- ★ @huang2016 — the coming of age of de novo protein design.
+- @dauparas2022 — ProteinMPNN: deep-learning sequence design.
+- @watson2023 — RFdiffusion: de novo design with diffusion models.
+
+## Online lectures
+
+::: {.callout-warning title="To be added"}
+:::

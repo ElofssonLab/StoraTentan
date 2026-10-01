@@ -1,0 +1,26 @@
+# Textbooks and general resources {#sec-textbooks}
+
+## Textbooks
+
+No single textbook is required. These cover most of the material, but none
+is fully up to date.
+
+- @zvelebil2008 — *Understanding Bioinformatics*. Broad coverage, recommended in the exam description.
+- @pevsner2015 — *Bioinformatics and Functional Genomics*. Broad coverage; the basis of the 2021 exam variant.
+- @jones2004 — *An Introduction to Bioinformatics Algorithms*. Algorithms: alignment, suffix trees, assembly, phylogeny, motifs.
+- @compeau2018 — *Bioinformatics Algorithms: An Active Learning Approach*. With free online lectures.
+- @durbin1998 — *Biological Sequence Analysis*. The classic on probabilistic models and HMMs.
+- @felsenstein2004 — *Inferring Phylogenies*.
+- @burkowski2008 — *Structural Bioinformatics: An Algorithmic Approach*. Structure, dynamic programming, RNA secondary structure, superposition, machine learning.
+- @gagniuc2021 — *Algorithms in Bioinformatics: Theory and Implementation*. Alignment, motifs, Markov chains.
+- @hastie2009 — *The Elements of Statistical Learning*.
+
+## Keeping up to date
+
+- Proceedings of the most recent **ISMB** and **ECCB** conferences (published as supplements of *Bioinformatics*).
+- The annual *Nucleic Acids Research* **Database** and **Web Server** issues.
+- Seminars and dissertations at DBB and SciLifeLab.
+
+## Collections of papers
+
+- [Classical papers in bioinformatics (Elofsson group)](https://sites.google.com/a/scilifelab.se/elofsson/teaching/classical-papers)
