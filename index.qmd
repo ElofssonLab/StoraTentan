@@ -1,5 +1,12 @@
 # About this guide {.unnumbered}
 
+::: {.callout-important title="Draft for feedback"}
+This is a draft (October 2026). The chapter introductions and reading
+lists are open for comments from the teachers. In particular: are
+important papers missing, are any of them outdated, and is the level
+right? The *Online lectures* sections have not been filled in yet.
+:::
+
 This book collects reading material for **Stora Tentan**, the 15 hp oral
 exam in bioinformatics for PhD students at the Department of Biochemistry
 and Biophysics (DBB), Stockholm University. It is built on the current exam

@@ -7,12 +7,51 @@ and how.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: binary vs. co-complex interactions; high-throughput
-experimental screens and their error rates; computational prediction from
-genomic context, coevolution and structure (AlphaFold-multimer); network
-biology — topology, hubs, modules, and functional association networks.
-:::
+Most proteins carry out their function together with others, in stable
+complexes, transient signalling interactions or enzyme–substrate
+encounters. Mapping which proteins interact, and how, is therefore a way
+both to understand cellular machinery and to annotate unknown proteins.
+
+The two main experimental approaches at proteome scale measure different
+things. **Yeast two-hybrid (Y2H)** screens test pairs of proteins for
+direct, *binary* interactions by reconstituting a transcription factor
+[@uetz2000]. **Affinity purification followed by mass spectrometry
+(AP-MS)** pulls down a tagged bait together with everything bound to it,
+directly or indirectly. It reports *co-complex* membership
+[@gavin2002; @ho2002]. Early comparisons showed that these datasets
+overlapped surprisingly little and had high false-positive and
+false-negative rates [@vonmering2002]. Later, systematic human maps with
+improved quality control were produced [@rolland2014; @luck2020;
+@huttlin2021]. Cross-linking MS and structural methods add information
+about *how* proteins bind.
+
+Computational methods fall into a few classes. *Genomic-context* methods
+infer functional links from gene fusion, conserved neighbourhood and
+co-occurrence across genomes (@sec-protein-function). *Coevolution*
+methods use the fact that residues at an interface mutate in a
+correlated way, which can be detected in paired alignments of the two
+families [@burger2008; @cong2019]. Since 2021 deep learning has
+transformed the field. AlphaFold2 and AlphaFold-Multimer can predict both
+whether two proteins interact and the structure of the complex. This has
+been applied to large sets of protein pairs
+[@evans2021; @bryant2022; @humphreys2021]. Integrated resources such as
+STRING combine experimental data, co-expression, text mining and
+predictions into scored *functional association networks*
+[@szklarczyk2023; @guala2020].
+
+Interactions together form networks, and network science provides tools
+to study them [@barabasi2004]. Many biological networks have heavy-tailed
+degree distributions, with a few highly connected *hubs*
+[@barabasi1999; @jeong2000]. In yeast, hubs are more often essential
+[@jeong2001], and they have characteristic sequence and domain properties
+[@ekman2006]. Networks are organised into modules that correspond to
+complexes and pathways. This modularity can be used to find active
+subnetworks in expression data [@ideker2002], to predict phenotypes of
+perturbations [@lee2008], and to relate disease genes to each other
+[@goh2007]. Systems biology combines such networks with perturbation
+experiments and quantitative models [@ideker2000; @ideker2001]. For
+metabolism it uses constraint-based approaches such as flux balance
+analysis [@orth2010].
 
 ## Key concepts
 
@@ -83,4 +122,11 @@ biology — topology, hubs, modules, and functional association networks.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

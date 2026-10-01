@@ -6,11 +6,52 @@ Advantages and limitations of different methods.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: trees as hypotheses of descent; distance, parsimony,
-maximum-likelihood and Bayesian methods; substitution models; assessing
-support; phylogenomics and the tree of life.
-:::
+A phylogenetic tree is a hypothesis about how a set of sequences or
+species descend from common ancestors. Trees are used to classify
+organisms, infer orthology, date divergences, reconstruct ancestral
+sequences and track pathogens. The challenge is computational as well as
+statistical. The number of possible unrooted trees for *n* taxa grows as
+(2*n*−5)!!, so with only 20 taxa there are more than 10^20 trees. Every
+practical method therefore combines a criterion for scoring a tree with a
+heuristic for searching tree space [@yang2012; @kapli2020].
+
+**Distance methods** first convert the alignment into a matrix of
+pairwise evolutionary distances, corrected for multiple substitutions,
+and then build a tree from the matrix. UPGMA assumes a constant molecular
+clock. Neighbour joining [@saitou1987] does not, and it is fast enough for
+thousands of sequences. **Maximum parsimony** chooses the tree that needs
+the fewest changes [@fitch1971]. It is intuitive, but it is not
+statistically consistent when rates vary: long branches tend to be
+grouped together ("long-branch attraction"). **Maximum likelihood**
+computes the probability of the data under an explicit model of sequence
+evolution for each tree, using Felsenstein's pruning algorithm
+[@felsenstein1981], and searches for the tree with the highest
+likelihood. RAxML and IQ-TREE are the standard implementations
+[@stamatakis2014; @minh2020]. **Bayesian inference** combines the
+likelihood with prior distributions and samples trees from the posterior
+with Markov chain Monte Carlo [@huelsenbeck2001; @ronquist2012]. The
+relationship between parsimony and the model-based methods is discussed
+by @steel2000.
+
+The model-based methods depend on a *substitution model*. These range
+from Jukes–Cantor, with equal rates, to GTR, the general time-reversible
+model, usually combined with a gamma distribution for rate variation
+across sites. The model should be chosen with a statistical criterion.
+Support for clades is assessed with the bootstrap [@felsenstein1985] or
+with Bayesian posterior probabilities. These two measures are not
+directly comparable. Most methods treat the alignment as known, but
+alignment errors can change the tree, and methods exist that co-estimate
+alignment and phylogeny [@thorne1991; @redelings2005; @wong2008].
+
+With genome-scale data, random error is no longer the main problem.
+Systematic errors from model misspecification, compositional bias and
+hidden paralogy become more important. Phylogenomics deals with
+discordance between gene trees, which can be caused by incomplete lineage
+sorting, duplication and loss, or horizontal transfer
+[@delsuc2005]. Approaches include concatenating many genes or using
+coalescent-based species-tree methods. These approaches have reshaped the
+tree of life, for example by revealing the large diversity of
+uncultivated bacteria and archaea [@hug2016].
 
 ## Key concepts
 
@@ -76,4 +117,11 @@ support; phylogenomics and the tree of life.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

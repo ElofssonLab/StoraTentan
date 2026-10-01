@@ -7,11 +7,49 @@ evolutionary pressure.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: mutation, selection and drift; the neutral theory and
-the molecular clock; homology (orthology, paralogy, xenology); gene and
-genome duplication; domain rearrangements; horizontal gene transfer.
-:::
+Dobzhansky's remark that "nothing in biology makes sense except in the
+light of evolution" is particularly true for bioinformatics. Almost every method that
+transfers information from one sequence to another assumes common
+descent. The genomes we see today are shaped by mutation, which creates
+variation, and by natural selection and genetic drift, which determine
+whether variants are lost or become fixed. The neutral theory
+[@kimura1968] proposed that most changes fixed at the molecular level are
+selectively neutral and become fixed by drift. This explains the roughly
+clock-like accumulation of substitutions that makes it possible to date
+divergences [@zuckerkandl1963; @langley1974]. Selection can be detected by
+comparing the rate of non-synonymous to synonymous substitutions (dN/dS):
+values much below one indicate purifying selection, and values above one
+indicate positive selection [@yang2000].
+
+Homologous genes fall into different classes depending on the event that
+separated them [@fitch1970; @koonin2005]. *Orthologs* diverged by
+speciation, *paralogs* by gene duplication, and *xenologs* by horizontal
+gene transfer. The distinction matters because orthologs are generally
+expected to keep the same function, while paralogs are free to diverge.
+Orthology can be inferred from graphs of reciprocal best hits, as in COG
+and InParanoid [@tatusov1997; @remm2001], or from gene trees reconciled
+with the species tree, as in OrthoFinder [@goodman1979; @emms2019]. Each
+approach has its own strengths and failure modes [@altenhoff2019].
+
+Gene duplication is the main source of new genes. Most duplicates are
+lost, but some are kept because they split the ancestral functions
+between them (subfunctionalisation) or acquire new ones
+(neofunctionalisation) [@ohno1968; @lynch2000]. Whole-genome duplications
+have occurred repeatedly, for example twice early in vertebrate evolution
+and several times in plants. In proteins, evolution also works at the
+level of domains. New architectures arise when existing domains are
+duplicated, fused, split or shuffled
+[@apic2001; @bjorklund2005; @levy2008]. In prokaryotes, horizontal gene
+transfer is a major force, and it, rather than duplication, drives the
+expansion of most protein families [@treangen2011].
+
+Population genetics also helps explain why genomes differ in structure.
+Lynch argued that the small effective population sizes of multicellular
+eukaryotes weaken selection against slightly harmful additions, such as
+introns and mobile elements. Genomic complexity can therefore build up
+without being adaptive [@lynch2003]. This view connects evolution with
+@sec-genomes. Evolutionary relationships are reconstructed with the
+methods described in @sec-phylogeny.
 
 ## Key concepts
 
@@ -85,4 +123,11 @@ genome duplication; domain rearrangements; horizontal gene transfer.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

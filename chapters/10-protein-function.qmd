@@ -6,13 +6,57 @@ Classifications, prediction methods, and definitions.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: what "function" means (molecular, cellular,
-biological); controlled vocabularies (GO, EC); annotation transfer by
-homology and its pitfalls; non-homology methods (genomic context,
-networks); prediction of sorting signals and localisation; predicting the
-effect of variants; how function prediction is evaluated (CAFA).
-:::
+Predicting what a protein does is the ultimate goal of most sequence
+analysis, but "function" is hard to define. It can mean the molecular
+activity (e.g. "serine protease"), the biological process the protein
+takes part in (e.g. "blood coagulation"), or where in the cell it acts.
+The Gene Ontology formalises these three aspects as directed acyclic
+graphs of terms. Each annotation carries an *evidence code* that tells
+whether it comes from an experiment or was inferred computationally
+[@ashburner2000; @go2023]. Enzymes are also classified by EC numbers.
+Only a small fraction of all known proteins has experimentally determined
+function. Almost everything else is predicted.
+
+The most common approach is **transfer by homology**: if a protein is
+similar enough to one of known function, it probably shares that
+function [@whisstock2003]. This works well at high sequence identity, but
+it becomes unreliable for distant homologs and for paralogs, which often
+diverge in function after duplication (@sec-evolution). It also fails for
+multidomain proteins, where the matching region may cover only one
+domain. Domain- and family-based annotation, for example with Pfam and
+InterPro, assigns function at the level of the domain. Structure can show
+function even when sequence similarity is lost, for example through
+conserved active-site geometry. AlphaFold models have made this possible
+for whole proteomes.
+
+Other methods use information beyond the sequence of a single protein.
+*Genomic context* methods use comparative genomics. Proteins that are
+fused into one chain in another organism (the "Rosetta stone" approach),
+that are encoded next to each other across many genomes, or that are
+present and absent in the same species (*phylogenetic profiles*) are
+likely to be functionally linked
+[@marcotte1999science; @marcotte1999nature; @enright2001; @snel2000].
+Networks of interactions and co-expression support "guilt by
+association" (@sec-protein-interactions). Structure-based interactome
+predictions have been used to annotate whole proteomes [@garzon2016].
+
+Some aspects of function can be predicted directly from sequence signals.
+*Subcellular localisation* is largely determined by sorting signals.
+Secretory signal peptides were first predicted with weight matrices
+[@vonheijne1986] and later with neural networks [@nielsen1997]. A key
+problem was to separate them from transmembrane helices
+[@petersen2011]. Modern predictors such as SignalP 6 and DeepLoc 2 use
+protein language models [@teufel2022; @almagro2017; @thumuluri2022]. A
+growing application is predicting the effect of *missense variants*.
+Unsupervised models of evolutionary sequence variation, and models that
+also use structure, can now classify most possible human missense
+variants [@frazer2021; @cheng2023].
+
+Evaluating function prediction is difficult. Annotations are incomplete,
+biased towards well-studied proteins and change over time. The CAFA
+experiments address this by predicting functions for proteins that are
+annotated later [@radivojac2013; @zhou2019]. They show steady but modest
+progress, and that simple homology-based baselines are hard to beat.
 
 ## Key concepts
 
@@ -79,4 +123,11 @@ effect of variants; how function prediction is evaluated (CAFA).
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

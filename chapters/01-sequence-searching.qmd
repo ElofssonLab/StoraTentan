@@ -7,11 +7,51 @@ accuracy. Understanding the advantages of different algorithms is essential.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction based on open-access material: homology vs. similarity,
-dynamic programming, heuristics for speed, profiles and HMMs for
-sensitivity, and how significance (E-values) is estimated.
-:::
+Finding sequences that are similar to a query is the most frequently used
+operation in bioinformatics. It is the first step in annotating a new gene,
+building a family alignment, inferring a phylogeny or predicting a
+structure. The underlying idea is *homology*: two sequences are homologous
+if they share a common ancestor. Homology cannot be observed directly, but
+it can be inferred when two sequences are more similar than expected by
+chance. A good search method therefore needs two things: a way to score
+similarity, and a way to tell whether a score is significant
+[@pearson2013].
+
+Similarity is scored by aligning the sequences. Dynamic programming finds
+the optimal global [@needleman1970] or local [@smith1981] alignment for a
+given scoring scheme, in time proportional to the product of the sequence
+lengths. The scoring scheme has two parts. Substitution matrices such as
+PAM [@dayhoff1978] and BLOSUM [@henikoff1992] give log-odds scores for
+aligning each pair of residues. Gap penalties, usually affine, penalise
+insertions and deletions. Exact dynamic programming is too slow for
+searching large databases. Heuristic methods such as FASTA [@pearson1988]
+and BLAST [@altschul1990] therefore start from short exact or
+high-scoring word matches and extend only the promising ones, trading a
+little sensitivity for a large gain in speed. For local alignments, the
+statistics of the best score are well understood: it follows an
+extreme-value distribution. This makes it possible to report an E-value,
+the number of hits with this score expected by chance in a database of
+this size.
+
+Pairwise methods miss many distant relationships. The next step in
+sensitivity came from *profiles*, which capture the position-specific
+conservation of a whole family. PSI-BLAST builds a profile iteratively
+from its own hits [@altschul1997]. Profile hidden Markov models put the
+same idea on a probabilistic footing [@krogh1994; @eddy2004]. HMMER3 made
+them as fast as BLAST [@eddy2011], and HHsearch/HHblits compare two HMMs
+with each other [@soding2005; @remmert2012]. The growth of sequence
+databases has also driven new tools that are orders of magnitude faster,
+such as MMseqs2 and DIAMOND [@steinegger2017; @buchfink2021]. Since
+structure is more conserved than sequence, Foldseek now makes it possible
+to search millions of predicted structures [@vankempen2024].
+
+Closely related problems are multiple sequence alignment, where exact
+solutions are intractable and progressive or consistency-based heuristics
+are used [@notredame2000; @edgar2004; @katoh2013], and motif finding,
+where short, weakly conserved signals must be found without knowing where
+they are [@lawrence1993; @bailey1994]. Mapping millions of short reads to
+a reference genome needs exact-match indexes such as the Burrows–Wheeler
+transform. That is covered in @sec-genomics.
 
 ## Key concepts
 
@@ -96,4 +136,11 @@ sensitivity, and how significance (E-values) is estimated.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

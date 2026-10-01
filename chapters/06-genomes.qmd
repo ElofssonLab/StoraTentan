@@ -7,11 +7,52 @@ the difference between eukaryotic and prokaryotic genomes?
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: genome size and gene content across the tree of life;
-operons vs. split genes; non-coding DNA, repeats and transposons;
-chromosomes and 3D organisation; pan-genomes.
-:::
+Genomes differ enormously in size and organisation. Bacterial and
+archaeal genomes are typically 0.5–10 Mb, with about one gene per
+kilobase. Eukaryotic genomes range from a few megabases in yeasts to more
+than 100 Gb in some plants and amphibians. Genome size is not correlated
+with organismal complexity (the "C-value paradox"): most of the variation
+comes from non-coding DNA, not from gene number. Humans have about 20,000
+protein-coding genes, which make up only about 1–2% of a 3.1 Gb genome
+[@lander2001; @venter2001; @nurk2022].
+
+**Prokaryotic genomes** are usually a single circular chromosome, often
+together with plasmids. They are compact, with short intergenic regions
+and genes that lack introns. Functionally related genes are often
+organised in operons that are transcribed as one mRNA. Gene content is
+very dynamic. Genes are frequently gained by horizontal gene transfer and
+lost again, so strains of the same species can differ in a large part of
+their gene repertoire. This led to the concept of the *pan-genome*: a
+core shared by all strains plus a large accessory set
+[@tettelin2005; @koonin2008; @treangen2011]. The first complete genome of
+a free-living organism, *Haemophilus influenzae*, was sequenced in 1995
+[@fleischmann1995].
+
+**Eukaryotic genomes** are divided between several linear chromosomes
+with centromeres and telomeres, packaged into chromatin inside the
+nucleus. Genes are split into exons and introns, and alternative splicing
+lets one gene produce several protein isoforms. Most eukaryotic DNA is
+intergenic or intronic. A large part of it consists of transposable
+elements and other repeats, for example about half of the human genome.
+Regulatory elements such as promoters, enhancers and insulators can lie
+far from the genes they control. Chromatin folds into loops and
+topologically associating domains that bring these elements together
+[@liebermanaiden2009]. How much of the non-coding genome is "functional"
+is still debated. The ENCODE project found biochemical activity across
+most of the genome [@encode2012], but critics argue that activity does
+not imply function. Eukaryotes also carry organelle genomes in
+mitochondria and chloroplasts, which are remnants of bacterial
+endosymbionts.
+
+Why are genomes so different? One influential explanation is
+population-genetic. In organisms with large effective population sizes,
+such as most prokaryotes, selection is efficient enough to remove even
+slightly costly DNA. In organisms with small populations, such as
+multicellular eukaryotes, drift allows introns, mobile elements and
+duplicated genes to accumulate [@lynch2003]. Comparisons across genomes
+suggest that there are statistical regularities in genome evolution, for
+example in the distributions of family sizes and evolutionary rates
+[@koonin2011].
 
 ## Key concepts
 
@@ -60,4 +101,11 @@ chromosomes and 3D organisation; pan-genomes.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

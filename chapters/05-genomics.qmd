@@ -6,11 +6,53 @@ Methods for sequencing, algorithms for assembly, gene predictions, etc.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: from Sanger sequencing to short-read and long-read
-technologies; how reads become genomes (assembly) or are placed on a
-reference (mapping); calling variants; finding genes.
-:::
+Genomics begins with reading DNA. Sanger's chain-termination method
+[@sanger1977], automated with fluorescent dyes [@smith1986], produced
+reads of up to about 1,000 bases. It was used for the first genomes,
+including the human genome. From 2005, "next-generation" methods made
+sequencing massively parallel: 454 pyrosequencing
+[@ronaghi1998; @margulies2005] and above all Illumina sequencing by
+synthesis [@bentley2008]. This reduced costs by many orders of magnitude,
+but produced short reads (100–300 bp). Third-generation single-molecule
+technologies, PacBio and Oxford Nanopore, produce reads that are tens of
+kilobases or longer [@jain2018]. At first these reads had high error
+rates. PacBio HiFi reads are now both long and accurate [@goodwin2016].
+
+There are two main ways to use reads. **De novo assembly** reconstructs a
+genome without a reference. The main difficulty is repeats that are
+longer than the reads. Early assemblers used the overlap–layout–consensus
+paradigm [@anson1999; @myers2000], later formalised as the string graph
+[@myers2005]. For millions of short reads, computing all pairwise
+overlaps is too expensive. De Bruijn graph assemblers instead break reads
+into *k*-mers and look for an Eulerian path through the graph
+[@pevzner2001; @zerbino2008; @compeau2011]. Long accurate reads have
+brought the field back to overlap-based methods. They now make possible
+haplotype-resolved [@cheng2021] and complete, telomere-to-telomere
+assemblies [@nurk2022]. Assemblies are judged by contiguity (N50), by
+completeness (e.g. how many conserved single-copy genes are found) and
+by comparison between assemblers [@bradnam2013].
+
+**Resequencing** maps reads to a reference genome. Aligners for short
+reads index the reference with the Burrows–Wheeler transform and FM-index,
+which allow exact matches to be found in memory proportional to the
+genome size and in time independent of it [@langmead2009; @li2009].
+minimap2 uses minimizer seeds and chaining for long reads [@li2018].
+Each alignment is given a mapping quality, which expresses the
+uncertainty in reads from repetitive regions. **Variant calling** then
+combines evidence from many reads with base and mapping qualities in a
+probabilistic model to compute genotype likelihoods
+[@marth1999; @li2008; @li2011; @depristo2011]. More recently,
+deep-learning callers treat the problem as image classification
+[@poplin2018].
+
+A genome sequence is only useful once its genes are found. In
+prokaryotes, gene finding is relatively easy because genes are dense and
+lack introns. HMM-based tools such as GeneMark reach high accuracy
+[@lukashin1998]. In eukaryotes, genes are split into exons separated by
+introns that can be very long. Ab initio predictors such as GENSCAN model
+the gene structure with generalised HMMs [@burge1997]. Modern annotation
+pipelines combine such predictions with evidence from RNA-seq and protein
+alignments.
 
 ## Key concepts
 
@@ -82,4 +124,11 @@ reference (mapping); calling variants; finding genes.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

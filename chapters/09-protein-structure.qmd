@@ -7,13 +7,63 @@ predict protein structure.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: the protein folding problem (Anfinsen, Levinthal);
-secondary, tertiary and quaternary structure; domains and folds;
-experimental structure determination; the path from secondary structure
-prediction through homology modelling, fold recognition, fragment assembly
-and coevolution to AlphaFold; membrane proteins; design and docking.
-:::
+A protein's function depends on its three-dimensional structure.
+Anfinsen showed that the amino-acid sequence alone determines the native
+fold, which is the free-energy minimum under physiological conditions
+[@anfinsen1973]. Levinthal pointed out that a random search of all
+conformations would take far longer than the age of the universe, so
+folding must follow pathways through a funnel-shaped energy landscape
+[@levinthal1966]. Predicting structure from sequence, "the protein folding
+problem", was a central challenge in computational biology for 50 years.
+
+Structures are described hierarchically. *Secondary structure* (α-helices
+and β-strands) packs into *tertiary* folds [@chothia1977]. Larger proteins
+consist of *domains*, compact units that fold and evolve independently.
+Several chains can assemble into *quaternary* structures. Most structures
+have been determined by X-ray crystallography. Model quality there is
+checked with the free R-value [@brunger1992]. NMR spectroscopy has also
+contributed, and cryo-electron microscopy has become dominant for large
+complexes [@scheres2012]. Structures are compared by superposition, using
+measures such as RMSD and the TM-score [@zhang2005]. Comparisons show
+that structure is far more conserved than sequence and that the number of
+distinct folds is limited [@holm1996].
+
+Prediction methods developed in several stages:
+
+- Secondary structure prediction went from single-residue propensities
+  [@chou1974a; @garnier1978] to neural networks fed with evolutionary
+  profiles, which raised accuracy above 70–80% [@rost1993; @jones1999].
+- **Homology modelling** builds a model from a related structure
+  [@sali1993]. When sequence similarity is too low, **fold recognition**
+  or *threading* tests how well the sequence fits known folds
+  [@bowie1991; @jones1992].
+- For proteins without templates, **fragment assembly** with Rosetta
+  produced the first accurate de novo models of small proteins
+  [@simons1997; @bradley2005].
+- A breakthrough came from **coevolution**. Residues in contact mutate in
+  a correlated way, and global statistical models such as direct-coupling
+  analysis can separate direct from indirect correlations in large
+  multiple sequence alignments [@weigt2009; @marks2011; @marks2012].
+  Deep networks trained on these signals then predicted contact maps with
+  much higher accuracy [@wang2017].
+- At CASP14, **AlphaFold2** [@jumper2021] reached accuracy close to
+  experiment for most single domains. It combines the MSA and the
+  residue-pair representation in an attention-based network and outputs
+  atomic coordinates together with confidence measures (pLDDT, PAE).
+  RoseTTAFold [@baek2021], language-model-based ESMFold [@lin2023] and
+  AlphaFold3, which also handles ligands and nucleic acids
+  [@abramson2024], followed. CASP has evaluated all of this progress
+  blindly since 1994 [@kryshtafovych2021].
+
+Membrane proteins make up about a quarter of most proteomes and follow
+simpler rules. Transmembrane helices are hydrophobic stretches, and
+positively charged residues stay on the cytoplasmic side (the
+"positive-inside" rule). This allows topology prediction with HMMs and,
+more recently, with deep learning [@vonheijne1992; @krogh2001; @hallgren2022].
+Related areas are molecular dynamics [@mccammon1977], docking of small
+molecules with fast scoring functions [@kuntz1982; @warren2006], and
+protein design. Design reverses the prediction problem and has also been
+transformed by deep learning [@huang2016; @dauparas2022; @watson2023].
 
 ## Key concepts
 
@@ -129,4 +179,11 @@ See also the structure classification papers in @sec-databases.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

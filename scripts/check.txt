@@ -180,6 +180,7 @@ brunger1992	Brünger	1992	Free R value: a novel statistical quantity for assessi
 mccammon1977	McCammon	1977	Dynamics of folded proteins
 vonheijne1992	von Heijne	1992	Membrane protein structure prediction
 krogh2001	Krogh	2001	Predicting transmembrane protein topology with a hidden markov model: application to compl
+elofsson2007	Elofsson	2007	Membrane Protein Structure: Prediction versus Reality
 hallgren2022	Hallgren	2022	DeepTMHMM predicts alpha and beta transmembrane proteins using deep neural networks
 kuntz1982	Kuntz	1982	A geometric approach to macromolecule-ligand interactions
 meng1992	Meng	1992	Automated docking with grid‐based energy evaluation
@@ -203,7 +204,10 @@ almagro2017	Almagro Armenteros	2017	DeepLoc: prediction of protein subcellular l
 thumuluri2022	Thumuluri	2022	DeepLoc 2.0: multi-label subcellular localization prediction using protein language models
 frazer2021	Frazer	2021	Disease variant prediction with deep generative models of evolutionary data
 cheng2023	Cheng	2023	Accurate proteome-wide missense variant effect prediction with AlphaMissense
+marcotte1999nature	Marcotte	1999	A combined algorithm for genome-wide prediction of protein function
 marcotte1999science	Marcotte	1999	Detecting Protein Function and Protein-Protein Interactions from Genome Sequences
+tsoka2000	Tsoka	2000	Prediction of protein interactions: metabolic enzymes are frequently involved in gene fusi
+doolittle1999	Doolittle	1999	Do you dig my groove?
 enright2001	Enright	2001	Functional associations of proteins in entire genomes by means of exhaustive detection of 
 snel2000	Snel	2000	Genome evolution
 garzon2016	Garzón	2016	A computational interactome and functional annotation for the human proteome
@@ -215,7 +219,7 @@ rolland2014	Rolland	2014	A Proteome-Scale Map of the Human Interactome Network
 luck2020	Luck	2020	A reference map of the human binary protein interactome
 huttlin2021	Huttlin	2021	Dual proteome-scale networks reveal cell-specific remodeling of the human interactome
 ekman2006	Ekman	2006	What properties characterize the hub proteins of the protein-protein interaction network o
-burger2008	Motter	2008	Predicting synthetic rescues in metabolic networks
+burger2008	Burger	2008	Accurate prediction of protein–protein interactions from sequence alignments using a Bayes
 cong2019	Cong	2019	Protein interaction networks revealed by proteome coevolution
 humphreys2021	Humphreys	2021	Computed structures of core eukaryotic protein complexes
 evans2021	Evans	2021	Protein complex prediction with AlphaFold-Multimer

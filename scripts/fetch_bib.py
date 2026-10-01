@@ -4,7 +4,7 @@
 Usage: python3 scripts/fetch_bib.py   (run from repository root)
 Entries without DOI are kept in manual.bib and appended unchanged.
 """
-import json, re, sys, time, urllib.error, urllib.parse, urllib.request
+import html, json, re, unicodedata, sys, time, urllib.error, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -47,6 +47,47 @@ def fetch(key, doi):
     return res
 
 
+CONSORTIA = {"uniprot2023": "{The UniProt Consortium}", "go2023": "{The Gene Ontology Consortium}",
+             "lander2001": "{International Human Genome Sequencing Consortium}",
+             "encode2012": "{The ENCODE Project Consortium}"}
+
+
+# Fields Crossref is missing for some records; inserted after the entry key.
+EXTRA = {"saitou1987": "volume={4}, number={4}, pages={406--425},"}
+
+# Author lists that Crossref has wrong or truncated.
+AUTHORS = {
+    "saitou1987": "Saitou, Naruya and Nei, Masatoshi",
+    "encode2012": "{The ENCODE Project Consortium}",
+    "altschul1997": "Altschul, Stephen F. and Madden, Thomas L. and Sch{\\\"a}ffer, Alejandro A. and Zhang, Jinghui"
+                    " and Zhang, Zheng and Miller, Webb and Lipman, David J.",
+    "berman2000": "Berman, Helen M. and Westbrook, John and Feng, Zukang and Gilliland, Gary and Bhat, T. N."
+                  " and Weissig, Helge and Shindyalov, Ilya N. and Bourne, Philip E.",
+    "lukashin1998": "Lukashin, Alexander V. and Borodovsky, Mark",
+    "zhang2005": "Zhang, Yang and Skolnick, Jeffrey",
+    "bohm1994": "B{\\\"o}hm, Hans-Joachim",
+}
+
+
+def clean(bib, key):
+    """Fix common Crossref quirks: markup in titles, editor notes, empty consortium authors."""
+    bib = re.sub(r"</?(i|b|tt|scp|sub|sup)>", "", bib)
+    bib = re.sub(r"\s*1?\s*1\s*Edited by [^}]*", "", bib)
+    bib = re.sub(r"\s+", " ", bib)
+    bib = unicodedata.normalize("NFC", bib).replace("\u2010", "-")
+    bib = html.unescape(bib).replace(" & ", " \\& ")
+    bib = bib.replace("author={van Kempen,", "author={{van Kempen},")
+    bib = re.sub(r",? month=\w+(?=,| })", "", bib)
+    bib = bib.replace("author={ and ", "author={" + CONSORTIA.get(key, "") + (" and " if key in CONSORTIA else ""), 1)
+    bib = re.sub(r" editor=\{[^}]*\},", "", bib)
+    if key in AUTHORS:
+        bib = re.sub(r" author=\{(?:[^{}]|\{[^{}]*\})*\},", "", bib)
+        bib = bib.replace(f"{{{key},", f"{{{key}, author={{{AUTHORS[key]}}},", 1)
+    if key in EXTRA:
+        bib = bib.replace(f"{{{key},", f"{{{key}, {EXTRA[key]}", 1)
+    return bib
+
+
 def main():
     rows = [l.split("\t") for l in TSV.read_text().splitlines() if l.strip() and not l.startswith("#")]
     with ThreadPoolExecutor(1) as ex:
@@ -57,7 +98,7 @@ def main():
             failed.append((key, doi, res["error"]))
             continue
         bib = re.sub(r"^\s*@(\w+)\{[^,]*,", lambda m: f"@{m.group(1)}{{{key},", res["bib"].strip(), count=1)
-        entries.append(bib)
+        entries.append(clean(bib, key))
         print(f"{key}\t{res['author']}\t{res['year']}\t{res['title'][:90]}")
     if MANUAL.exists():
         entries.append(MANUAL.read_text().strip())

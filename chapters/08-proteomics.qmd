@@ -6,12 +6,56 @@ Different proteomics methods. How are these used, algorithms.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: mass-spectrometry-based proteomics — from proteins to
-peptides to spectra; identifying peptides by database search; controlling
-errors with target–decoy strategies; quantification; and complementary
-antibody- and affinity-based methods.
-:::
+Proteomics studies the proteins themselves: which ones are present, how
+abundant they are, how they are modified and whom they interact with. mRNA
+levels are only moderately correlated with protein levels, and many
+regulatory events, such as phosphorylation, cleavage and complex
+formation, happen only at the protein level. Proteomics therefore
+provides information that genomics and transcriptomics cannot
+[@aebersold2003; @aebersold2016].
+
+Most proteomics today is done with **mass spectrometry (MS)**. In
+*bottom-up* or *shotgun* proteomics, proteins are digested with trypsin.
+The peptides are separated by liquid chromatography, ionised and measured
+in the mass spectrometer (MS1). Selected peptides are then fragmented and
+the fragments are measured as well (MS2, tandem MS). Fragmentation mostly
+breaks the peptide backbone, giving series of b- and y-ions whose mass
+differences correspond to amino acids. The central computational task is
+to work out which peptide produced each spectrum. Database search engines
+such as SEQUEST and Mascot compare each experimental spectrum with
+theoretical spectra of all candidate peptides from a protein database and
+score the best peptide-spectrum match (PSM) [@eng1994; @perkins1999].
+Alternatives include matching against libraries of previously observed
+spectra and de novo sequencing. Deep learning now predicts fragment
+spectra and retention times accurately [@gessulat2019].
+
+Because every spectrum gets a best match, error control is essential. The
+*target–decoy* strategy searches against real and reversed or shuffled
+sequences together. The number of decoy hits estimates the number of
+false target hits, and hence the false discovery rate
+[@elias2007; @nesvizhskii2010]. Machine-learning rescoring, such as
+Percolator, improves the separation between correct and incorrect matches
+[@kall2007]. Going from peptides to proteins adds a further problem,
+*protein inference*, because many peptides are shared between related
+proteins.
+
+There are several ways to quantify proteins. These include label-free
+methods based on peptide intensities, metabolic labelling (SILAC) and
+isobaric chemical tags (TMT), which allow many samples to be pooled
+[@cox2008]. In *data-dependent acquisition* (DDA) the instrument chooses
+which peptides to fragment, so measurements are partly random and some
+values are missing. *Data-independent acquisition* (DIA/SWATH) fragments
+everything in wide mass windows and gives more reproducible results, at
+the cost of complex, mixed spectra that need dedicated software
+[@gillet2012; @ludwig2018; @demichev2020].
+
+Large projects have produced draft maps of the human proteome
+[@kim2014; @wilhelm2014]. They have been complemented by antibody-based
+imaging of protein localisation in the Human Protein Atlas [@uhlen2015].
+Data are shared through PRIDE and ProteomeXchange [@perezriverol2022].
+MS is also central to interaction proteomics, such as affinity
+purification and cross-linking, which is discussed in
+@sec-protein-interactions.
 
 ## Key concepts
 
@@ -69,4 +113,11 @@ antibody- and affinity-based methods.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

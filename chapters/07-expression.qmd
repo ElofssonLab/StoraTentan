@@ -6,12 +6,54 @@ Expression analysis of genes and proteins: methods, algorithms, statistics.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: measuring transcripts (microarrays → RNA-seq →
-single-cell), from reads to counts, normalisation, differential expression,
-clustering and dimensionality reduction, and the statistics of testing
-thousands of genes at once.
-:::
+Measuring which genes are expressed, and how much, links the genome to
+the phenotype. The first genome-wide methods were DNA microarrays. They
+measure the hybridisation of labelled cDNA to probes synthesised on a
+chip [@fodor1991] or spotted on glass [@schena1995]. Microarrays
+introduced most of the analysis ideas still in use. These include
+normalisation between samples, clustering of genes with similar profiles
+[@eisen1998], comparisons across tissues [@su2004], and the need to deal
+with thousands of statistical tests at once [@quackenbush2001].
+
+RNA sequencing (RNA-seq) has largely replaced microarrays
+[@mortazavi2008; @wang2009]. It counts reads from transcripts, so it is
+not limited to predefined probes. It covers a larger dynamic range and
+can detect new transcripts, isoforms and allele-specific expression. A
+typical analysis has several steps [@conesa2016]:
+
+1. Quality control.
+2. Alignment to the genome with a splice-aware aligner [@dobin2013], or
+   fast "pseudo-alignment" directly to the transcriptome
+   [@bray2016; @patro2017].
+3. Counting reads per gene or transcript, possibly after transcript
+   assembly [@trapnell2010].
+4. Normalisation for sequencing depth and composition.
+5. Statistical testing for differential expression.
+
+Counts are overdispersed compared with a Poisson distribution, so tools
+such as edgeR and DESeq2 model them with the negative binomial
+distribution. They borrow information across genes to estimate the
+dispersion reliably from only a few replicates
+[@robinson2010; @love2014; @oshlack2010]. Lists of differentially
+expressed genes are then interpreted with gene-set enrichment methods
+[@subramanian2005].
+
+Single-cell RNA-seq measures expression in individual cells. It has
+revealed new cell types and developmental trajectories. Its data are
+sparse and noisy, and they need dedicated methods for normalisation,
+dimensionality reduction (PCA, t-SNE, UMAP), clustering and annotation
+[@luecken2019; @heumos2023]. Spatial transcriptomics also keeps the
+position of each measurement in the tissue [@stark2019].
+
+All expression studies share one statistical problem: testing 20,000
+genes at a 5% significance level will give about 1,000 false positives
+even if nothing changes. Controlling the family-wise error rate
+(Bonferroni) is very conservative. The false discovery rate, the expected
+proportion of false positives among the reported findings, is usually
+the more useful quantity [@benjamini1995; @storey2003; @efron2002].
+Exploratory tools such as principal component analysis [@lever2017] are
+essential for detecting batch effects and outliers before any testing is
+done. Protein-level expression is covered in @sec-proteomics.
 
 ## Key concepts
 
@@ -78,4 +120,11 @@ thousands of genes at once.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::

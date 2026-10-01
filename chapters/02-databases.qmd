@@ -7,11 +7,49 @@ their hierarchy and relationships.
 
 ## Introduction
 
-::: {.callout-warning title="To be written"}
-Short introduction: primary (archival) vs. secondary (curated/derived)
-databases; the INSDC collaboration; sequence → family → structure →
-function → interaction databases; identifiers and cross-references.
-:::
+Bioinformatics depends on public databases, and knowing what each one
+contains, where its data come from and how much to trust it is a core
+skill. A useful distinction is between **primary (archival)** databases,
+which store data as submitted by the experimentalists, and **secondary
+(derived or curated)** databases, which add analysis, classification or
+expert annotation on top of the primary data.
+
+Nucleotide sequences are archived by the International Nucleotide Sequence
+Database Collaboration (INSDC). It has three partners, GenBank (NCBI), ENA
+(EMBL-EBI) and DDBJ, which exchange data daily. Raw sequencing reads are
+stored in the SRA/ENA. Genome resources such as Ensembl, the UCSC Genome
+Browser and NCBI RefSeq build curated, non-redundant gene models and
+annotations on top of these archives [@cunningham2022]. Most protein
+sequences are never determined directly: they are translated from
+predicted genes. UniProt [@uniprot2023] collects them into UniProtKB. That
+database has two parts: Swiss-Prot, which is manually reviewed and
+annotated, and TrEMBL, which is annotated automatically. UniProt also
+provides clustered sets (UniRef) and an archive of all sequences
+(UniParc).
+
+On top of the sequences sit databases that group proteins into families
+and domains. Pfam builds profile HMMs from curated seed alignments
+[@sonnhammer1997; @mistry2021]. InterPro integrates Pfam and a dozen other
+family and site databases into a single resource [@paysanlafosse2023].
+Experimentally determined structures are archived in the PDB
+[@berman2000]. Structures are classified hierarchically into domains,
+folds and superfamilies by SCOP, CATH and ECOD
+[@murzin1995; @sillitoe2021; @cheng2014]. Since 2021 the AlphaFold
+Database has provided predicted structures for almost every protein in
+UniProt [@varadi2022]. Function is described with controlled vocabularies,
+above all the Gene Ontology [@ashburner2000; @go2023]. Pathways are
+described in KEGG and Reactome, and interactions in resources such as
+STRING, IntAct and BioGRID [@szklarczyk2023].
+
+These resources are tightly connected through cross-references, so a gene
+in Ensembl links to its protein in UniProt, the domains in InterPro, the
+structures in the PDB and the GO terms describing its function. Each step
+away from the primary data adds value but also adds possible errors. A
+classic problem is that automatically transferred annotations can
+propagate one wrong assignment to thousands of entries. Good practice is
+to know which evidence a particular annotation is based on. Every January,
+*Nucleic Acids Research* publishes a database issue with updated
+descriptions of most of these resources.
 
 ## Key concepts
 
@@ -71,4 +109,11 @@ database — read the most recent one.
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
+:::
+
+::: {.content-visible when-format="html"}
+## References {.unnumbered}
+
+::: {#refs}
+:::
 :::
