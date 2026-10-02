@@ -1,12 +1,16 @@
 project:
   type: book
   output-dir: _book
+  pre-render: python3 scripts/make_papers.py
+  resources:
+    - papers/open/*.pdf
 
 book:
   title: "Stora Tentan in Bioinformatics"
   subtitle: "Reading guide for the oral PhD exam at DBB, Stockholm University"
   author: "Arne Elofsson"
   date: last-modified
+  license: "CC BY-SA"
   chapters:
     - index.qmd
     - part: "Topics"

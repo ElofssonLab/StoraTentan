@@ -134,9 +134,19 @@ hard to interpret, and models can learn biases in their training sets
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_12.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_12-machine-learning.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_12-full.qmd >}}

@@ -126,9 +126,19 @@ alignments.
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_05.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_05-genomics.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_05-full.qmd >}}

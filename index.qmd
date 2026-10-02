@@ -54,6 +54,10 @@ Each of the twelve topic chapters follows the same structure:
    developments. Papers marked ★ were *mandatory* in earlier reading lists
    and are a good indication of the expected level.
 5. **Online lectures** — recorded lectures that explain the topic well.
+6. **Student contributions** — papers, lectures, tutorials and exam
+   experiences added by students. Each chapter's contributions live in
+   their own file, `chapters/student/_NN-topic.qmd`; see the instructions
+   at the top of that file.
 
 Full references are collected in [References](references.qmd); hover over a
 citation to see it.
@@ -82,3 +86,12 @@ mandatory articles and a much longer list of background papers. These have
 been distributed over the topic chapters. A 2021 variant of the exam was
 instead based on Pevsner's textbook [@pevsner2015] together with the review
 by @sapoval2022; both remain excellent starting points.
+
+## Licence
+
+This book is licensed under the [Creative Commons
+Attribution-ShareAlike 4.0 International licence (CC BY-SA
+4.0)](https://creativecommons.org/licenses/by-sa/4.0/). Parts of the text
+are adapted from Wikipedia and other openly licensed sources, which are
+credited in each section. Included papers keep their own licences, and only
+openly licensed papers are reproduced in full.

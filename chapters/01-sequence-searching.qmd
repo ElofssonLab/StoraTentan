@@ -5,69 +5,78 @@ Both historical and state-of-the-art methods are used for speed and
 accuracy. Understanding the advantages of different algorithms is essential.
 :::
 
-## Introduction
+## Overview
 
 Finding sequences that are similar to a query is the most frequently used
 operation in bioinformatics. It is the first step in annotating a new gene,
 building a family alignment, inferring a phylogeny or predicting a
-structure. The underlying idea is *homology*: two sequences are homologous
-if they share a common ancestor. Homology cannot be observed directly, but
-it can be inferred when two sequences are more similar than expected by
-chance. A good search method therefore needs two things: a way to score
-similarity, and a way to tell whether a score is significant
-[@pearson2013].
+structure. This chapter follows the development of the field:
 
-Similarity is scored by aligning the sequences. Dynamic programming finds
-the optimal global [@needleman1970] or local [@smith1981] alignment for a
-given scoring scheme, in time proportional to the product of the sequence
-lengths. The scoring scheme has two parts. Substitution matrices such as
-PAM [@dayhoff1978] and BLOSUM [@henikoff1992] give log-odds scores for
-aligning each pair of residues. Gap penalties, usually affine, penalise
-insertions and deletions. Exact dynamic programming is too slow for
-searching large databases. Heuristic methods such as FASTA [@pearson1988]
-and BLAST [@altschul1990] therefore start from short exact or
-high-scoring word matches and extend only the promising ones, trading a
-little sensitivity for a large gain in speed. For local alignments, the
-statistics of the best score are well understood: it follows an
-extreme-value distribution. This makes it possible to report an E-value,
-the number of hits with this score expected by chance in a database of
-this size.
+- what homology is, and how it relates to sequence similarity
+  (@sec-ch01-homology);
+- exact alignment by dynamic programming and the substitution matrices
+  that score it (@sec-ch01-dp);
+- the heuristic and indexing methods that make database search fast, and
+  the statistics that tell us which hits to trust (@sec-ch01-heuristic);
+- comparing sequences without aligning them, by their $k$-mers
+  (@sec-ch01-alignfree);
+- multiple alignments, motifs, profiles and profile hidden Markov models,
+  which capture whole families and find more distant relationships
+  (@sec-ch01-profiles);
+- how the same ideas are extended to RNA, where structure is conserved
+  better than sequence (@sec-ch01-rna);
+- protein domains and the databases that classify them
+  (@sec-ch01-domains);
+- protein language models and how they are starting to be used to detect
+  remote homology (@sec-ch01-plm);
+- how search methods are benchmarked, and what can go wrong
+  (@sec-ch01-benchmarks).
 
-Pairwise methods miss many distant relationships. The next step in
-sensitivity came from *profiles*, which capture the position-specific
-conservation of a whole family. PSI-BLAST builds a profile iteratively
-from its own hits [@altschul1997]. Profile hidden Markov models put the
-same idea on a probabilistic footing [@krogh1994; @eddy2004]. HMMER3 made
-them as fast as BLAST [@eddy2011], and HHsearch/HHblits compare two HMMs
-with each other [@soding2005; @remmert2012]. The growth of sequence
-databases has also driven new tools that are orders of magnitude faster,
-such as MMseqs2 and DIAMOND [@steinegger2017; @buchfink2021]. Since
-structure is more conserved than sequence, Foldseek now makes it possible
-to search millions of predicted structures [@vankempen2024].
+{{< include 01/_1-homology.qmd >}}
 
-Closely related problems are multiple sequence alignment, where exact
-solutions are intractable and progressive or consistency-based heuristics
-are used [@notredame2000; @edgar2004; @katoh2013], and motif finding,
-where short, weakly conserved signals must be found without knowing where
-they are [@lawrence1993; @bailey1994]. Mapping millions of short reads to
-a reference genome needs exact-match indexes such as the Burrows–Wheeler
-transform. That is covered in @sec-genomics.
+{{< include 01/_2-dynamic-programming.qmd >}}
+
+{{< include 01/_3-heuristic-search.qmd >}}
+
+{{< include 01/_3b-alignment-free.qmd >}}
+
+{{< include 01/_4a-msa-profiles.qmd >}}
+
+{{< include 01/_4b-hmms.qmd >}}
+
+{{< include 01/_4c-rna.qmd >}}
+
+{{< include 01/_5-domains.qmd >}}
+
+{{< include 01/_6-language-models.qmd >}}
+
+{{< include 01/_7-benchmarks.qmd >}}
 
 ## Key concepts
 
-- Homology vs. similarity; why similarity implies homology only above a threshold
-- Global (Needleman–Wunsch) vs. local (Smith–Waterman) alignment; dynamic programming; gap penalties (linear, affine)
-- Substitution matrices: PAM vs. BLOSUM, how they are derived, log-odds scores
-- Heuristic search: FASTA, BLAST (seeds, extension, two-hit), BLAT; speed vs. sensitivity
-- Statistical significance: extreme value distribution, E-values, bit scores, multiple testing
-- Profiles: PSI-BLAST, position-specific scoring matrices, pseudocounts, profile corruption
-- Profile hidden Markov models: HMMER, forward/backward, Viterbi; HMM–HMM comparison (HHsearch/HHblits)
-- Modern fast search: MMseqs2, DIAMOND; structure-based search (Foldseek)
-- Indexing for exact/short matches: suffix trees/arrays, Burrows–Wheeler transform (see also @sec-genomics)
-- Multiple sequence alignment: progressive alignment, consistency (T-Coffee), iterative refinement (MUSCLE, MAFFT, Clustal Omega)
-- Motif finding: PSSMs/sequence logos, Gibbs sampling, MEME
+A checklist for revision. You should be able to explain each point,
+including the algorithm or argument behind it, and its limitations.
 
-## Background reading
+- **Homology:** definition as common ancestry (qualitative, not a percentage); orthologs, paralogs (in-/out-paralogs), xenologs, ohnologs; analogy and convergence; why significant similarity implies homology but not the reverse; the twilight and midnight zones; why proteins are compared rather than DNA
+- **Dynamic programming:** principle of optimality; Needleman–Wunsch and Smith–Waterman recursions and traceback; semi-global, overlap and banded alignment; linear, affine and convex gap penalties; Gotoh's three-matrix algorithm; time and space complexity, Hirschberg/Myers–Miller linear space
+- **Substitution matrices:** log-odds scores, target and background frequencies, relative entropy; how PAM and BLOSUM are derived and how their numbering differs; choosing a matrix
+- **Heuristic search:** FASTA (k-tuples, diagonals, banded optimisation); BLAST (neighbourhood words, threshold $T$, X-drop, two-hit method, gapped extension); low-complexity filtering; the BLAST family and translated searches; DIAMOND, MMseqs2 and Linclust; Foldseek and the 3Di alphabet
+- **Statistics:** why local scores follow a Gumbel distribution; Karlin–Altschul $E = Kmn\,e^{-\lambda S}$; bit scores, E- and P-values; effective lengths, gapped and composition-based statistics; why E-values depend on database size
+- **Exact matching:** suffix trees and arrays; the Burrows–Wheeler transform, LF mapping, FM-index and backward search; why they suit read mapping
+- **Multiple alignment:** sum-of-pairs score and NP-hardness; progressive alignment and "once a gap, always a gap"; ClustalW, Clustal Omega, T-Coffee (consistency), MUSCLE and MAFFT (iterative refinement); benchmarks
+- **Motifs and profiles:** consensus, PROSITE patterns, PWMs with pseudocounts, information content and logos; Gibbs sampling and MEME; Gribskov profiles; sequence weighting and priors; PSI-BLAST and profile corruption
+- **Hidden Markov models:** states, transitions, emissions; Viterbi, forward, backward, posterior decoding and Baum–Welch; profile HMM architecture (match/insert/delete, Plan 7), local and glocal modes; HMMER3 filter pipeline and forward-score E-values; HHsearch/HHblits (HMM–HMM comparison); sequence–sequence < sequence–profile < profile–profile
+- **Domains:** structural, folding and evolutionary definitions; multidomain proteins and architectures; why domains complicate annotation transfer; Pfam (seed/full alignments, gathering thresholds, clans), Pfam-N, InterPro; SCOP, CATH, ECOD and TED, and fold vs. superfamily
+- **RNA homology search:** why RNA homologues share structure rather than sequence; compensatory mutations and covariation; Nussinov and Zuker folding algorithms; SCFGs and their relation to HMMs (CYK, inside–outside); covariance models, Infernal and its HMM filters; Rfam; limitations (pseudoknots, unstructured ncRNAs)
+- **Alignment-free comparison:** $k$-mer statistics; MinHash and the Mash distance; ANI and Kraken; when alignment-free methods work and when they fail
+- **Protein language models:** masked and autoregressive objectives; transformers and attention; UniRep, SeqVec, ESM, ProtTrans, ESMFold, ESM3; per-residue and per-protein embeddings; embedding search, TM-Vec, pLM-BLAST, PLMSearch; limitations (leakage, lack of statistics, bias towards well-sampled families)
+- **Benchmarking:** structural classifications as ground truth; ROC, ROC$_n$, coverage vs. errors per query, E-value calibration; circularity, family-size bias and train–test leakage
+
+{{< include papers/_01.qmd >}}
+
+## Further reading
+
+### Background reading (open access)
 
 - [Sequence homology](https://en.wikipedia.org/wiki/Sequence_homology)
 - [Sequence alignment](https://en.wikipedia.org/wiki/Sequence_alignment)
@@ -82,61 +91,121 @@ transform. That is covered in @sec-genomics.
 - [Multiple sequence alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
 - [A tutorial on Burrows–Wheeler indexing methods](http://blog.thegrandlocus.com/2016/07/a-tutorial-on-burrows-wheeler-indexing-methods)
 
-## Key papers
+### Papers
 
-::: {.callout-tip}
-★ = mandatory in earlier reading lists.
-:::
+Papers on the mandatory list above are not repeated here. ★ = mandatory in
+earlier reading lists.
 
-### Reviews — start here
+#### Reviews — start here
 
 - @pearson2013 — an introduction to similarity searching, homology inference and statistics; the best single starting point.
 - @eddy2004 — "What is a hidden Markov model?" (two pages).
+- @eddy1998 — profile hidden Markov models.
 - @lambert2003 — review of common sequence alignment methods.
+- @bepler2021 — learning the protein language: evolution, structure and function.
 
-### Pairwise alignment and substitution matrices
+#### Homology
 
+- @reeck1987 — "homology" in proteins and nucleic acids: a terminology muddle and a way out of it.
+- @doolittle1981 — similar amino acid sequences: chance or common ancestry?
+- @rost1999 — the twilight zone of protein sequence alignments.
+- @fitch1970 — distinguishing homologous from analogous proteins (orthology and paralogy defined).
+
+#### Pairwise alignment and substitution matrices
+
+- @bellman1954 — the theory of dynamic programming.
 - @needleman1970 — global alignment by dynamic programming.
-- ★ @smith1981 — local alignment.
+- @gotoh1982 — affine gap penalties in quadratic time.
+- @myers1988 — optimal alignments in linear space.
 - @dayhoff1978 — PAM matrices.
 - @henikoff1992 — BLOSUM matrices.
+- @altschul1991 — substitution matrices from an information-theoretic perspective.
+- @eddy2004blosum — where did the BLOSUM62 matrix come from?
 
-### Heuristic database search
+#### Heuristic search and statistics
 
 - @pearson1988 — FASTA.
 - @altschul1990 — the original BLAST.
-- ★ @altschul1997 — gapped BLAST and PSI-BLAST.
+- @karlin1990 — statistical significance of local alignment scores.
 - @kent2002 — BLAT, for fast genome-scale alignment.
-- @steinegger2017 — MMseqs2, sensitive search at scale.
 - @buchfink2021 — DIAMOND, BLAST-level sensitivity at much higher speed.
+- @steinegger2018 — Linclust: clustering huge sequence sets in linear time.
+- @barriohernandez2023 — clustering the AlphaFold database with Foldseek.
+- @ferragina2000 — the FM-index.
 
-### Profiles and hidden Markov models
+#### Multiple sequence alignment and motifs
 
-- @krogh1994 — profile HMMs for protein families.
-- @park1998 — profile methods find three times as many remote homologues as pairwise methods.
-- @soding2005 — HMM–HMM comparison (HHsearch).
-- @eddy2008 — a probabilistic model of local alignment and significance estimation.
-- ★ @eddy2011 — HMMER3: accelerated profile HMM searches.
-- ★ @remmert2012 — HHblits.
-- @vankempen2024 — Foldseek: searching with structure (3Di alphabet).
-
-### Multiple sequence alignment
-
+- @feng1987 — progressive alignment.
+- @thompson1994 — ClustalW.
+- @sievers2011 — Clustal Omega.
 - @notredame2000 — T-Coffee (consistency).
 - @edgar2004 — MUSCLE.
-- @sievers2011 — Clustal Omega.
 - @katoh2013 — MAFFT.
-
-### Motif finding
-
 - @lawrence1993 — Gibbs sampling for subtle motifs.
 - @bailey1994 — MEME (expectation maximisation).
-- @stormo2000 — representation and discovery of DNA binding sites.
+- @schneider1990 — sequence logos.
+
+#### Profiles and hidden Markov models
+
+- @gribskov1987 — profile analysis.
+- @park1998 — profile methods find three times as many remote homologues as pairwise methods.
+- @krogh1994 — profile HMMs for protein families.
+- @rabiner1989 — a tutorial on hidden Markov models.
+- @eddy2008 — a probabilistic model of local alignment and significance estimation.
+- @soding2005 — HMM–HMM comparison (HHsearch).
+- ★ @remmert2012 — HHblits.
+- @steinegger2019 — HH-suite3.
+
+#### RNA homology search
+
+- @eddy1994 — covariance models for RNA sequence analysis.
+- @nawrocki2013 — Infernal 1.1: 100-fold faster RNA homology searches.
+- @griffithsjones2003, @kalvari2021 — the Rfam database.
+- @nussinov1980, @zuker1981 — RNA secondary structure by dynamic programming.
+- @sankoff1985 — simultaneous folding and alignment.
+- @rivas2017 — a statistical test for conserved RNA structure.
+- @lowe1997 — tRNAscan-SE.
+
+#### Alignment-free comparison
+
+- @zielezinski2017 — review of alignment-free sequence comparison.
+- @ondov2016 — Mash: genome distances with MinHash.
+- @wood2014 — Kraken: metagenomic classification with $k$-mers.
+- @jain2018ani — ANI and prokaryotic species boundaries.
+
+#### Benchmarking
+
+- @brenner1998 — assessing sequence comparison methods with structurally identified distant relationships.
+- @lindahl2000 — identification of related proteins at family, superfamily and fold level.
+- @gribskov1996 — ROC analysis of sequence matching.
+
+#### Domains
+
+- @sonnhammer1997 — Pfam: domain families from seed alignments.
+- @mistry2021, @paysanlafosse2025 — Pfam today, including Pfam-N.
+- @bileschi2022 — deep learning to annotate the protein universe (Pfam-N).
+- @lau2024 — TED: the Encyclopedia of Domains in the AlphaFold database.
+
+#### Protein language models
+
+- @rives2021 — ESM-1b: biological structure and function emerge from unsupervised learning.
+- @elnaggar2022 — ProtTrans.
+- @lin2023 — ESM-2 and ESMFold.
+- @hamamsy2024 — TM-Vec: remote homology from sequence embeddings.
+- @hong2024 — dense retrieval for fast, sensitive homolog detection.
+- @kaminski2023 — pLM-BLAST.
+- @liu2024 — PLMSearch.
 
 ## Online lectures
 
 ::: {.callout-warning title="To be added"}
 :::
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_01-sequence-searching.qmd >}}
 
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
@@ -144,3 +213,5 @@ transform. That is covered in @sec-genomics.
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_01-full.qmd >}}

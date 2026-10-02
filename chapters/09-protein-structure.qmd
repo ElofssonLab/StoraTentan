@@ -181,9 +181,19 @@ See also the structure classification papers in @sec-databases.
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_09.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_09-protein-structure.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_09-full.qmd >}}

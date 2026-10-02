@@ -47,6 +47,14 @@ does not pick up the book structure. Rendering only one format
 - `index.qmd` – about the exam (from the 2025 instructions)
 - `chapters/NN-*.qmd` – one chapter per exam topic: introduction, key concepts,
   background reading, key papers (★ = mandatory in old lists), online lectures
+- `chapters/student/_NN-*.qmd` – student contributions, one file per chapter,
+  included at the end of the chapter (the leading `_` stops Quarto from
+  rendering them as separate pages)
+- `chapters/01/` – the sections of chapter 1 (one file each), with static
+  figures in `01/figs/` and generated tables in `01/generated/`. The book
+  contains no runnable code: the scripts in `scripts/ch01/` were used once
+  to draw the figures and tables and are kept only so they can be redrawn
+  (they are not run by `quarto render`)
 - `chapters/textbooks.qmd` – appendix with textbooks and general resources
 - `preamble.tex` – LaTeX settings for the PDF (★ glyph, URL breaking)
 - `styles.css` – shows per-chapter reference lists in HTML
@@ -62,3 +70,24 @@ does not pick up the book structure. Rendering only one format
    `references.bib`. Fixes for bad Crossref metadata go in `AUTHORS`/`EXTRA`
    in the script.
 3. Cite it in a chapter as `- @key — one-line comment`.
+
+## Papers to read in full
+
+Each chapter ends with a short list (at most a handful) of papers to read
+in full, defined in `papers/papers.yml` (key + one-line note).
+`scripts/make_papers.py` runs automatically before every `quarto render`:
+
+- it looks up each paper's licence on Crossref;
+- **CC-licensed** papers are downloaded to `papers/open/` (re-downloaded
+  if missing). They are linked in the HTML version and appended in full at
+  the end of the chapter in the PDF;
+- **all others** get a DOI link and a link through the SU library proxy
+  (`https://ezp.sub.su.se/login?url=…`, SU login required). Nothing
+  copyrighted is redistributed.
+
+If an open-access PDF cannot be downloaded automatically, the script says
+so; save it by hand as `papers/open/<key>.pdf`.
+
+The generated include files in `chapters/papers/` must be kept in the
+repository: Quarto resolves includes before the pre-render step runs, so a
+fresh checkout without them fails to build.

@@ -119,9 +119,19 @@ uncultivated bacteria and archaea [@hug2016].
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_04.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_04-phylogeny.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_04-full.qmd >}}

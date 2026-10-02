@@ -103,9 +103,19 @@ example in the distributions of family sizes and evolutionary rates
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_06.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_06-genomes.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_06-full.qmd >}}

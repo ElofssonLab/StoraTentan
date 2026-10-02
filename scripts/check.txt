@@ -251,3 +251,102 @@ greener2022	Greener	2021	A guide to machine learning for biologists
 rives2021	Rives	2021	Biological structure and function emerge from scaling unsupervised learning to 250 million
 avsec2021	Avsec	2021	Effective gene expression prediction from sequence by integrating long-range interactions
 durbin1998	Durbin	1998	Biological Sequence Analysis
+reeck1987	Reeck	1987	“Homology” in proteins and nucleic acids: A terminology muddle and a way out of it
+doolittle1981	Doolittle	1981	Similar Amino Acid Sequences: Chance or Common Ancestry?
+rost1999	Rost	1999	Twilight zone of protein sequence alignments
+gotoh1982	Gotoh	1982	An improved algorithm for matching biological sequences
+karlin1990	Karlin	1990	Methods for assessing the statistical significance of molecular sequence features by using
+altschul1991	Altschul	1991	Amino acid substitution matrices from an information theoretic perspective
+eddy2004blosum	Eddy	2004	Where did the BLOSUM62 alignment score matrix come from?
+myers1988	Myers	1988	Optimal alignments in linear space
+bellman1954	Bellman	1954	The theory of dynamic programming
+ferragina2000	Ferragina	None	Opportunistic data structures with applications
+feng1987	Feng	1987	Progressive sequence alignment as a prerequisitetto correct phylogenetic trees
+higgins1988	Higgins	1988	CLUSTAL: a package for performing multiple sequence alignment on a microcomputer
+thompson1994	Thompson	1994	CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through se
+wang1994	WANG	1994	On the Complexity of Multiple Sequence Alignment
+gribskov1987	Gribskov	1987	Profile analysis: detection of distantly related proteins.
+bairoch1991	Bairoch	1991	Prosite: a dictionary of sites and patterns in proteins
+sigrist2013	Sigrist	2012	New and continuing developments at PROSITE
+schneider1990	Schneider	1990	Sequence logos: a new way to display consensus sequences
+viterbi1967	Viterbi	1967	Error bounds for convolutional codes and an asymptotically optimum decoding algorithm
+eddy1998	Eddy	1998	Profile hidden Markov models.
+steinegger2019	Steinegger	2019	HH-suite3 for fast remote homology detection and deep protein annotation
+steinegger2018	Steinegger	2018	Clustering huge protein sequence sets in linear time
+barriohernandez2023	Barrio-Hernandez	2023	Clustering predicted structures at the scale of the known protein universe
+wetlaufer1973	Wetlaufer	1973	Nucleation, Rapid Folding, and Globular Intrachain Regions in Proteins
+bileschi2022	Bileschi	2022	Using deep learning to annotate the protein universe
+lau2024	Lau	2024	Exploring structural diversity across the protein universe with The Encyclopedia of Domain
+paysanlafosse2025	Paysan-Lafosse	2024	The Pfam protein families database: embracing AI/ML
+alley2019	Alley	2019	Unified rational protein engineering with sequence-based deep representation learning
+heinzinger2019	Heinzinger	2019	Modeling aspects of the language of life through transfer-learning protein sequences
+elnaggar2022	Elnaggar	2022	ProtTrans: Toward Understanding the Language of Life Through Self-Supervised Learning
+bepler2021	Bepler	2021	Learning the protein language: Evolution, structure, and function
+hamamsy2024	Hamamsy	2023	Protein remote homology detection and structural alignment using deep learning
+hong2024	Hong	2024	Fast, sensitive detection of protein homologs using deep dense retrieval
+kaminski2023	Kaminski	2023	pLM-BLAST: distant homology detection based on direct comparison of sequence representatio
+liu2024	Liu	2024	PLMSearch: Protein language model powers accurate and fast sequence search for remote homo
+hayes2025	Hayes	2025	Simulating 500 million years of evolution with a language model
+mirdita2022	Mirdita	2022	ColabFold: making protein folding accessible to all
+suzek2015	Suzek	2014	UniRef clusters: a comprehensive and scalable alternative for improving sequence similarit
+asgari2015	Asgari	2015	Continuous Distributed Representation of Biological Sequences for Deep Proteomics and Geno
+rao2021	Rao	2020	Transformer protein language models are unsupervised structure learners
+meier2021	Meier	2021	Language models enable zero-shot prediction of the effects of mutations on protein functio
+johnson2021	Johnson	2021	Billion-Scale Similarity Search with GPUs
+heinzinger2024	Heinzinger	2024	Bilingual language model for protein sequence and structure
+chothia1986	Chothia	1986	The relation between the divergence of sequence and structure in proteins.
+doolittle1983	Doolittle	1983	Simian Sarcoma Virus
+                    <i>onc</i>
+                    Gene, v-
+         
+rost1997	Rost	1997	Protein structures sustain evolutionary drift
+wootton1993	Wootton	1993	Statistics of local complexity in amino acid sequences and sequence databases
+chothia1992	Chothia	1992	One thousand families for the molecular biologist
+finn2006	Finn	2006	Pfam: clans, web tools and services
+basu2008	Basu	2008	Evolution of protein domain promiscuity in eukaryotes
+fox2014	Fox	2013	SCOPe: Structural Classification of Proteins—extended, integrating SCOP and ASTRAL data an
+andreeva2020	Andreeva	2019	The SCOP database in 2020: expanded classification of representative family and superfamil
+blum2021	Blum	2020	The InterPro protein families and domains database: 20 years on
+carrillo1988	Carrillo	1988	The Multiple Sequence Alignment Problem in Biology
+lipman1989	Lipman	1989	A tool for multiple sequence alignment.
+henikoff1994	Henikoff	1994	Position-based sequence weights
+sjolander1996	Sjölander	1996	Dirichlet mixtures: a method for improved detection of weak but significant protein sequen
+thompson1999	Thompson	1999	BAliBASE: a benchmark alignment database for the evaluation of multiple alignment programs
+katoh2002	Katoh	2002	MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transfor
+loytynoja2008	Löytynoja	2008	Phylogeny-Aware Gap Placement Prevents Errors in Sequence Alignment and Evolutionary Analy
+schaffer2001	Schaffer	2001	Improving the accuracy of PSI-BLAST protein database searches with composition-based stati
+buchfink2015	Buchfink	2014	Fast and sensitive protein alignment using DIAMOND
+lipman1985	Lipman	1985	Rapid and Sensitive Protein Similarity Searches
+karlin1993	Karlin	1993	Applications and statistics for multiple high-scoring segments in molecular sequences.
+manber1993	Manber	1993	Suffix Arrays: A New Method for On-Line String Searches
+li2010	Li	2010	Fast and accurate long-read alignment with Burrows–Wheeler transform
+pearson1998	Pearson	1998	Empirical statistical estimates for sequence similarity searches
+farrar2007	Farrar	2006	Striped Smith–Waterman speeds database searches six times over other SIMD implementations
+baum1970	Baum	1970	A Maximization Technique Occurring in the Statistical Analysis of Probabilistic Functions 
+soding2005hhpred	Soding	2005	The HHpred interactive server for protein homology detection and structure prediction
+mirdita2017	Mirdita	2016	Uniclust databases of clustered and deeply annotated protein sequences and alignments
+churchill1989	Churchill	1989	Stochastic models for heterogeneous DNA sequences
+eddy1994	Eddy	1994	RNA sequence analysis using covariance models
+nawrocki2009	Nawrocki	2009	Infernal 1.0: inference of RNA alignments
+nawrocki2013	Nawrocki	2013	Infernal 1.1: 100-fold faster RNA homology searches
+griffithsjones2003	Griffiths-Jones	2003	Rfam: an RNA family database
+kalvari2021	Kalvari	2020	Rfam 14: expanded coverage of metagenomic, viral and microRNA families
+ontiveros2025	Ontiveros-Palacios	2024	Rfam 15: RNA families database in 2025
+lowe1997	Lowe	1997	tRNAscan-SE: A Program for Improved Detection of Transfer RNA Genes in Genomic Sequence
+chan2021	Chan	2021	tRNAscan-SE 2.0: improved detection and functional classification of transfer RNA genes
+sankoff1985	Sankoff	1985	Simultaneous Solution of the RNA Folding, Alignment and Protosequence Problems
+nussinov1980	Nussinov	1980	Fast algorithm for predicting the secondary structure of single-stranded RNA.
+zuker1981	Zuker	1981	Optimal computer folding of large RNA sequences using thermodynamics and auxiliary informa
+hofacker2002	Hofacker	2002	Secondary Structure Prediction for Aligned RNA Sequences
+rivas2017	Rivas	2016	A statistical test for conserved RNA structure shows lack of evidence for structure in lnc
+will2007	Will	2007	Inferring Noncoding RNA Families and Classes by Means of Genome-Scale Structure-Based Clus
+wheeler2013	Wheeler	2013	nhmmer: DNA homology search with profile HMMs
+ondov2016	Ondov	2016	Mash: fast genome and metagenome distance estimation using MinHash
+zielezinski2017	Zielezinski	2017	Alignment-free sequence comparison: benefits, applications, and tools
+wood2014	Wood	2014	Kraken: ultrafast metagenomic sequence classification using exact alignments
+jain2018ani	Jain	2018	High throughput ANI analysis of 90K prokaryotic genomes reveals clear species boundaries
+broder1997	Broder	None	On the resemblance and containment of documents
+brenner1998	Brenner	1998	Assessing sequence comparison methods with reliable structurally identified distant evolut
+lindahl2000	Lindahl	2000	Identification of related proteins on family, superfamily and fold level 1 1Edited by F. C
+pearson1995	Pearson	1995	Comparison of methods for searching protein sequence databases
+gribskov1996	Gribskov	1996	Use of receiver operating characteristic (ROC) analysis to evaluate sequence matching

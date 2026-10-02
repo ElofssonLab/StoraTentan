@@ -111,9 +111,19 @@ database — read the most recent one.
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_02.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_02-databases.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_02-full.qmd >}}

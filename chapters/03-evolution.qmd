@@ -125,9 +125,19 @@ methods described in @sec-phylogeny.
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_03.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_03-evolution.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_03-full.qmd >}}

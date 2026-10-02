@@ -115,9 +115,19 @@ purification and cross-linking, which is discussed in
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_08.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_08-proteomics.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_08-full.qmd >}}

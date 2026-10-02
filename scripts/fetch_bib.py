@@ -53,7 +53,12 @@ CONSORTIA = {"uniprot2023": "{The UniProt Consortium}", "go2023": "{The Gene Ont
 
 
 # Fields Crossref is missing for some records; inserted after the entry key.
-EXTRA = {"saitou1987": "volume={4}, number={4}, pages={406--425},"}
+EXTRA = {"saitou1987": "volume={4}, number={4}, pages={406--425},",
+         "ferragina2000": "year={2000},",
+         "broder1997": "year={1997},"}
+
+# Typos in Crossref titles: (wrong, right).
+TITLE_FIXES = [("prerequisitetto", "prerequisite to")]
 
 # Author lists that Crossref has wrong or truncated.
 AUTHORS = {
@@ -65,6 +70,15 @@ AUTHORS = {
                   " and Weissig, Helge and Shindyalov, Ilya N. and Bourne, Philip E.",
     "lukashin1998": "Lukashin, Alexander V. and Borodovsky, Mark",
     "zhang2005": "Zhang, Yang and Skolnick, Jeffrey",
+    "finn2006": "Finn, Robert D. and Mistry, Jaina and Schuster-B{\\\"o}ckler, Benjamin and Griffiths-Jones, Sam"
+                " and Hollich, Volker and Lassmann, Timo and Moxon, Simon and Marshall, Mhairi and Khanna, Ajay"
+                " and Durbin, Richard and Eddy, Sean R. and Sonnhammer, Erik L. L. and Bateman, Alex",
+    "griffithsjones2003": "Griffiths-Jones, Sam and Bateman, Alex and Marshall, Mhairi and Khanna, Ajay"
+                          " and Eddy, Sean R.",
+    "katoh2002": "Katoh, Kazutaka and Misawa, Kazuharu and Kuma, Kei-ichi and Miyata, Takashi",
+    "schaffer2001": "Sch{\\\"a}ffer, Alejandro A. and Aravind, L. and Madden, Thomas L. and Shavirin, Sergei"
+                    " and Spouge, John L. and Wolf, Yuri I. and Koonin, Eugene V. and Altschul, Stephen F.",
+    "wang1994": "Wang, Lusheng and Jiang, Tao",
     "bohm1994": "B{\\\"o}hm, Hans-Joachim",
 }
 
@@ -79,6 +93,8 @@ def clean(bib, key):
     bib = bib.replace("author={van Kempen,", "author={{van Kempen},")
     bib = re.sub(r",? month=\w+(?=,| })", "", bib)
     bib = bib.replace("author={ and ", "author={" + CONSORTIA.get(key, "") + (" and " if key in CONSORTIA else ""), 1)
+    for wrong, right in TITLE_FIXES:
+        bib = bib.replace(wrong, right)
     bib = re.sub(r" editor=\{[^}]*\},", "", bib)
     if key in AUTHORS:
         bib = re.sub(r" author=\{(?:[^{}]|\{[^{}]*\})*\},", "", bib)

@@ -125,9 +125,19 @@ progress, and that simple homology-based baselines are hard to beat.
 ::: {.callout-warning title="To be added"}
 :::
 
+{{< include papers/_10.qmd >}}
+
+## Student contributions
+
+Material suggested by students preparing for the exam.
+
+{{< include student/_10-protein-function.qmd >}}
+
 ::: {.content-visible when-format="html"}
 ## References {.unnumbered}
 
 ::: {#refs}
 :::
 :::
+
+{{< include papers/_10-full.qmd >}}
