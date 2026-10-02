@@ -1,3 +1,10 @@
+> **This repository has moved to GitLab:
+> <https://gitlab.com/ElofssonLab/storatentan>**
+>
+> This GitHub copy is no longer updated (it is an old, incomplete version
+> that does not build). Please clone, edit and open merge requests on
+> GitLab instead.
+
 # Stora Tentan (oral exam in bioinformatics)
 
 This book ( written using quarto) is an attempt to provide more
